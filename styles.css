@@ -675,7 +675,6 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
 }
 
 /* 로고 추가 */
-
-.passport { width:80%; position: relative; height: 173px; background: transparent; transform: rotate(21deg); background-color: var(--line); border: 2px solid var(--line);}
-.passport::before{ content:"Slow Passport"; color : var(--ink); display:'block'; position: absolute; top 0; left:0; font-size: 15px; text-align: center; width: 100%; padding-top: 20px;}
+.passport { width:80%; position: relative; height: 160px; background: transparent; transform: rotate(21deg); background-color: var(--line); border: 2px solid var(--line);}
+.passport::before{ content:"Slow Passport"; color : var(--ink); display:'block'; position: absolute; top: 15px; left:0; font-size: 15px; text-align: center; width: 100%;font-weight: bold;}
 .passport svg { position: absolute; width: 100%; bottom: 0; margin: 0; padding: 0; left: 0;}
