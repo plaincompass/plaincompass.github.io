@@ -316,6 +316,13 @@ h1 {
   margin-block: 14px;
 }
 
+.article video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-block: 14px;
+}
+
 .article li {
   padding-left: 5px;
   margin-block: 6px;
@@ -570,7 +577,8 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
   background: var(--surface);
 }
 
-.post-card-media img {
+.post-card-media img,
+.post-card-media video {
   display: block;
   width: 100%;
   height: 100%;
@@ -578,7 +586,8 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
   transition: transform 220ms ease;
 }
 
-.post-card-media:hover img {
+.post-card-media:hover img,
+.post-card-media:hover video {
   transform: scale(1.035);
 }
 
@@ -678,3 +687,15 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
 .passport { width:80%; position: relative; height: 160px; background: transparent; transform: rotate(21deg); background-color: var(--line); border: 2px solid var(--line);}
 .passport::before{ content:"Slow Passport"; color : var(--ink); display:'block'; position: absolute; top: 15px; left:0; font-size: 15px; text-align: center; width: 100%;font-weight: bold;}
 .passport svg { position: absolute; width: 100%; bottom: 0; margin: 0; padding: 0; left: 0;}
+
+@keyframes route-dash-flow {
+  to {
+    stroke-dashoffset: -7;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .passport:hover svg path[stroke="var(--accent)"][stroke-dasharray="2 5"] {
+    animation: route-dash-flow 500ms linear infinite;
+  }
+}

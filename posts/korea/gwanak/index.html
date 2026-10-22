@@ -25,6 +25,76 @@
         if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
       } catch {}
       document.addEventListener("DOMContentLoaded", () => {
+        const passport = document.querySelector(".site-aside .passport");
+        if (!passport || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        try {
+          if (sessionStorage.getItem("slowpassport-intro-played") === "true") return;
+          sessionStorage.setItem("slowpassport-intro-played", "true");
+        } catch {}
+
+        const routePaths = [...passport.querySelectorAll('svg path[d^="M21 115"]')];
+        const routeMarker = passport.querySelector('svg circle[cx="112"][cy="66"]');
+        const routeLengths = routePaths.map((path) => path.getTotalLength());
+        routePaths.forEach((path, index) => {
+          path.style.strokeDasharray = routeLengths[index] + " " + routeLengths[index];
+          path.style.strokeDashoffset = routeLengths[index];
+        });
+        if (routeMarker) routeMarker.style.opacity = "0";
+
+        const bounds = passport.getBoundingClientRect();
+        const scale = Math.min(
+          3.5,
+          (window.innerWidth * 0.82) / bounds.width,
+          (window.innerHeight * 0.78) / bounds.height,
+        );
+        const offsetX = window.innerWidth / 2 - (bounds.left + bounds.width / 2);
+        const offsetY = window.innerHeight / 2 - (bounds.top + bounds.height / 2);
+
+        passport.style.transformOrigin = "center";
+        passport.style.zIndex = "10";
+        passport.style.willChange = "transform, opacity";
+        const animation = passport.animate([
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 0, offset: 0 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.18 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.5 },
+          { transform: "translate(0, 0) scale(1) rotate(21deg)", opacity: 1, offset: 1 },
+        ], {
+          duration: 1600,
+          easing: "ease-in-out",
+        });
+
+        animation.onfinish = () => {
+          passport.style.removeProperty("transform-origin");
+          passport.style.removeProperty("z-index");
+          passport.style.removeProperty("will-change");
+
+          const pathAnimations = routePaths.map((path, index) => path.animate([
+            { strokeDashoffset: routeLengths[index] },
+            { strokeDashoffset: 0 },
+          ], {
+            duration: 1000,
+            easing: "ease-out",
+          }));
+
+          Promise.all(pathAnimations.map((pathAnimation) => pathAnimation.finished)).then(() => {
+            routePaths.forEach((path) => {
+              path.style.removeProperty("stroke-dasharray");
+              path.style.removeProperty("stroke-dashoffset");
+            });
+            if (!routeMarker) return;
+
+            const markerAnimation = routeMarker.animate([
+              { opacity: 0 },
+              { opacity: 0.85 },
+            ], {
+              duration: 300,
+              easing: "ease-out",
+            });
+            markerAnimation.onfinish = () => routeMarker.style.removeProperty("opacity");
+          });
+        };
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const toggle = document.getElementById("theme-toggle");
         if (!toggle) return;
         toggle.checked = root.dataset.theme === "dark";
@@ -34,6 +104,30 @@
           try {
             localStorage.setItem(storageKey, selectedTheme);
           } catch {}
+        });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
+        if (!videos.length || !("IntersectionObserver" in window)) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play().catch((error) => {
+                console.warn("Could not autoplay post video:", error);
+              });
+            } else {
+              video.pause();
+            }
+          }
+        }, { threshold: 0.25 });
+
+        videos.forEach((video) => {
+          video.muted = true;
+          video.controls = true;
+          video.playsInline = true;
+          observer.observe(video);
         });
       });
     })();
@@ -69,19 +163,20 @@
 <p>I’ll tell you about that place in this post, so just follow the route I took.</p>
 <h2>Starting Point: Gwacheon Station</h2>
 <ol>
-<li>Take Subway Line 4 and get off at Gwacheon Station. Find Exit 7.
-  <img src="https://travelmuse8.wordpress.com/image.png" alt="Gwacheon Station"></li>
-<li>When you exit, you’ll see a large road. Go straight.</li>
-<li>When you reach the bridge, turn left and continue uphill until Gwacheon Middle School appears.</li>
-<li>In front of the middle school, cross the road and go uphill toward Gwacheon HyangGuo.</li>
-<li>This is the starting point for Trail 2 on Mt. Gwanak.</li>
-<li>From there, follow the road. There aren’t any other specific roads, so choose the widest one.</li>
-<li>After walking uphill for about 40 minutes, you’ll see Yeonjuam Temple. It’s easy to find; the trail just continues uphill. When you reach the temple, you can buy noodles or ice cream to recharge.</li>
-<li>Although you’re still partway up the mountain, the view is great. Don’t rush to reach the top; take a moment to enjoy it.</li>
-<li>After that, there’s a path uphill behind the shop. It gets narrower than the path to the temple, so be careful, as there are many hikers.</li>
-<li>After climbing what feels like a million stairs, you’ll find a large rock.</li>
-<li>This is an uphill section, so wait your turn if you want to take a picture.</li>
+<li>Take Subway Line 4 and get off at Gwacheon Station. Find Exit 7.</li>
 </ol>
+<p>  <img src="https://travelmuse8.wordpress.com/image.png" alt="Gwacheon Station">
+  <img src="https://travelmuse8.wordpress.com/image.png" alt="Gwacheon Station222222ㄷㄷㄷ">
+2. When you exit, you’ll see a large road. Go straight.
+3. When you reach the bridge, turn left and continue uphill until Gwacheon Middle School appears.
+4. In front of the middle school, cross the road and go uphill toward Gwacheon HyangGuo.
+5. This is the starting point for Trail 2 on Mt. Gwanak.
+6. From there, follow the road. There aren’t any other specific roads, so choose the widest one.
+7. After walking uphill for about 40 minutes, you’ll see Yeonjuam Temple. It’s easy to find; the trail just continues uphill. When you reach the temple, you can buy noodles or ice cream to recharge.
+8. Although you’re still partway up the mountain, the view is great. Don’t rush to reach the top; take a moment to enjoy it.
+9. After that, there’s a path uphill behind the shop. It gets narrower than the path to the temple, so be careful, as there are many hikers.
+10. After climbing what feels like a million stairs, you’ll find a large rock.
+11. This is an uphill section, so wait your turn if you want to take a picture.</p>
 <h2 id="a-place-that-inspires-visitors-to-pursue-their-goals">A Place That Inspires Visitors to Pursue Their Goals</h2>
 
 <p>Unfortunately, one version of the story says that simply reaching the top isn’t enough to make your wishes come true. You also have to find the place to pray.</p>
@@ -138,7 +233,7 @@
             <div class="profile-image" role="img" aria-label="Slow Passport travel journal passport cover">
                 <div class="passport">
                     <svg class="profile-image" viewBox="0 0 180 132" role="img" aria-labelledby="profile-image-title">
-                        <title id="profile-image-title">A quiet trail winding through Korean mountains</title>
+                        <title id="profile-image-title">A quiet trail winding through mountains</title>
                         <rect x="1" y="1" width="178" height="130" rx="3" fill="var(--surface)" stroke="var(--line)"></rect>
                         <circle cx="137" cy="34" r="14" fill="var(--accent)" opacity="0.85"></circle>
                         <path d="M12 99 53 48l24 30 25-37 66 58v20H12z" fill="var(--green)" opacity="0.22"></path>

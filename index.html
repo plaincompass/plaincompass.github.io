@@ -23,6 +23,76 @@
         if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
       } catch {}
       document.addEventListener("DOMContentLoaded", () => {
+        const passport = document.querySelector(".site-aside .passport");
+        if (!passport || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        try {
+          if (sessionStorage.getItem("slowpassport-intro-played") === "true") return;
+          sessionStorage.setItem("slowpassport-intro-played", "true");
+        } catch {}
+
+        const routePaths = [...passport.querySelectorAll('svg path[d^="M21 115"]')];
+        const routeMarker = passport.querySelector('svg circle[cx="112"][cy="66"]');
+        const routeLengths = routePaths.map((path) => path.getTotalLength());
+        routePaths.forEach((path, index) => {
+          path.style.strokeDasharray = routeLengths[index] + " " + routeLengths[index];
+          path.style.strokeDashoffset = routeLengths[index];
+        });
+        if (routeMarker) routeMarker.style.opacity = "0";
+
+        const bounds = passport.getBoundingClientRect();
+        const scale = Math.min(
+          3.5,
+          (window.innerWidth * 0.82) / bounds.width,
+          (window.innerHeight * 0.78) / bounds.height,
+        );
+        const offsetX = window.innerWidth / 2 - (bounds.left + bounds.width / 2);
+        const offsetY = window.innerHeight / 2 - (bounds.top + bounds.height / 2);
+
+        passport.style.transformOrigin = "center";
+        passport.style.zIndex = "10";
+        passport.style.willChange = "transform, opacity";
+        const animation = passport.animate([
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 0, offset: 0 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.18 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.5 },
+          { transform: "translate(0, 0) scale(1) rotate(21deg)", opacity: 1, offset: 1 },
+        ], {
+          duration: 1600,
+          easing: "ease-in-out",
+        });
+
+        animation.onfinish = () => {
+          passport.style.removeProperty("transform-origin");
+          passport.style.removeProperty("z-index");
+          passport.style.removeProperty("will-change");
+
+          const pathAnimations = routePaths.map((path, index) => path.animate([
+            { strokeDashoffset: routeLengths[index] },
+            { strokeDashoffset: 0 },
+          ], {
+            duration: 1000,
+            easing: "ease-out",
+          }));
+
+          Promise.all(pathAnimations.map((pathAnimation) => pathAnimation.finished)).then(() => {
+            routePaths.forEach((path) => {
+              path.style.removeProperty("stroke-dasharray");
+              path.style.removeProperty("stroke-dashoffset");
+            });
+            if (!routeMarker) return;
+
+            const markerAnimation = routeMarker.animate([
+              { opacity: 0 },
+              { opacity: 0.85 },
+            ], {
+              duration: 300,
+              easing: "ease-out",
+            });
+            markerAnimation.onfinish = () => routeMarker.style.removeProperty("opacity");
+          });
+        };
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const toggle = document.getElementById("theme-toggle");
         if (!toggle) return;
         toggle.checked = root.dataset.theme === "dark";
@@ -32,6 +102,30 @@
           try {
             localStorage.setItem(storageKey, selectedTheme);
           } catch {}
+        });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
+        if (!videos.length || !("IntersectionObserver" in window)) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play().catch((error) => {
+                console.warn("Could not autoplay post video:", error);
+              });
+            } else {
+              video.pause();
+            }
+          }
+        }, { threshold: 0.25 });
+
+        videos.forEach((video) => {
+          video.muted = true;
+          video.controls = true;
+          video.playsInline = true;
+          observer.observe(video);
         });
       });
     })();
@@ -79,7 +173,7 @@
             <div class="profile-image" role="img" aria-label="Slow Passport travel journal passport cover">
                 <div class="passport">
                     <svg class="profile-image" viewBox="0 0 180 132" role="img" aria-labelledby="profile-image-title">
-                        <title id="profile-image-title">A quiet trail winding through Korean mountains</title>
+                        <title id="profile-image-title">A quiet trail winding through mountains</title>
                         <rect x="1" y="1" width="178" height="130" rx="3" fill="var(--surface)" stroke="var(--line)"></rect>
                         <circle cx="137" cy="34" r="14" fill="var(--accent)" opacity="0.85"></circle>
                         <path d="M12 99 53 48l24 30 25-37 66 58v20H12z" fill="var(--green)" opacity="0.22"></path>
