@@ -102,10 +102,93 @@ a:hover {
 }
 
 .profile-image {
-  display: block;
+  display: grid;
+  place-items: center;
   width: 100%;
-  height: auto;
+  max-width: 180px;
+  aspect-ratio: 180 / 132;
   margin: 0 0 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.passport-book {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 56%;
+  height: 86%;
+  padding-top: 9px;
+  border: 1px solid var(--passport-foil);
+  border-radius: 5px 7px 7px 5px;
+  background: var(--passport-cover);
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--passport-cover) 72%, transparent);
+  color: var(--passport-foil);
+}
+
+.passport-book::before {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 9px;
+  width: 1px;
+  background: currentColor;
+  content: "";
+  opacity: 0.45;
+}
+
+.passport-kicker {
+  font-family: Arial, sans-serif;
+  font-size: 5px;
+  font-weight: 700;
+}
+
+.passport-title {
+  margin-top: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.passport-emblem {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-top: 5px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
+.passport-emblem svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.passport-rule {
+  width: 48%;
+  height: 1px;
+  margin-top: 7px;
+  background: currentColor;
+  opacity: 0.65;
+}
+
+.passport-stamp {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  display: grid;
+  place-items: center;
+  width: 19px;
+  aspect-ratio: 1;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-size: 6px;
+  font-weight: 700;
 }
 
 .aside-section p {
@@ -590,3 +673,9 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* 로고 추가 */
+
+.passport { width:80%; position: relative; height: 173px; background: transparent; transform: rotate(21deg); background-color: var(--line); border: 2px solid var(--line);}
+.passport::before{ content:"Slow Passport"; color : var(--ink); display:'block'; position: absolute; top 0; left:0; font-size: 15px; text-align: center; width: 100%; padding-top: 20px;}
+.passport svg { position: absolute; width: 100%; bottom: 0; margin: 0; padding: 0; left: 0;}
