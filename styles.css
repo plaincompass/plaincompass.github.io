@@ -431,30 +431,34 @@ h1 {
 }
 
 .home-faq {
-  width: min(100% - 40px, 1080px);
+  width: 100%;
   max-width: none;
-  margin: 0 auto 28px;
-  padding-top: 18px;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
-.home-faq h2 {
-  margin-bottom: 14px;
-  font-size: 18px;
+.home-faq,
+.home-faq * {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
 }
 
-.home-faq .faq-item + .faq-item {
-  margin-top: 12px;
-}
-
+.home-faq h2,
 .home-faq .faq-item h3 {
-  margin-bottom: 4px;
-  font-size: 14px;
+  font-weight: 700;
 }
 
 .home-faq .faq-item p {
-  font-size: 13px;
+  font-weight: 400;
   line-height: 1.5;
+}
+
+.home-faq .faq-item + .faq-item {
+  margin-top: 0;
 }
 
 .site-footer {
@@ -467,8 +471,7 @@ h1 {
 @media (max-width: 560px) {
   .site-header,
   .site-layout,
-  .site-footer,
-  .home-faq {
+  .site-footer {
     width: min(100% - 32px, 1080px);
   }
 

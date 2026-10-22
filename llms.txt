@@ -1,16 +1,27 @@
 # Slow Passport
 
-> Firsthand travel guides to South Korea, hiking trails, wellness walks, and slower-paced travel experiences.
+> Firsthand South Korea travel guides, hiking routes, destination reviews, wellness walks, and practical advice for slower-paced travel.
 
-A personal travel journal sharing practical, firsthand guides to South Korea, hiking trails, wellness walks, and slow travel.
+A personal travel journal publishing firsthand travel guides, hiking routes, destination reviews, and wellness walking experiences across South Korea.
 
-## Categories
+## About
 
-- korea
+Slow Passport is a personal travel journal publishing firsthand travel guides,
+hiking routes, destination reviews, and wellness walking experiences across
+South Korea. Articles share practical details from personal visits, including
+routes, public transport, trail difficulty, facilities, and preparation notes
+when available.
 
-## Published articles
+## Topics
 
-### korea
+- Korea Travel
+- Hiking Trails
+- Wellness Walks
+- Slow Travel
+
+## Published Articles
+
+### Korea Travel
 
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
 - [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, and accessibility considerations.
