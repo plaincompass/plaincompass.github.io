@@ -232,7 +232,7 @@ h3 {
 h1 {
   max-width: 760px;
   margin: 0 0 16px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -254,6 +254,46 @@ h1 {
   color: var(--muted);
   font-family: Arial, sans-serif;
   font-size: 14px;
+}
+
+.post-levels {
+  display: grid;
+  gap: 8px;
+  max-width: 400px;
+  margin: 18px 0 0;
+}
+
+.post-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.post-level dt {
+  color: var(--muted);
+}
+
+.post-level dd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  width: 60%;
+}
+
+.post-level-description {
+  color: var(--ink);
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+.post-level-stars {
+  color: var(--accent);
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1;
 }
 
 .post-list {
