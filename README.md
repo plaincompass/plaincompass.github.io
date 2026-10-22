@@ -27,7 +27,7 @@ To help travelers discover useful information through firsthand experiences rath
 
 **Slow Passport**
 
-Traveler, hiker, and independent explorer documenting journeys across Korea and beyond.
+Traveler and independent explorer documenting journeys across Korea and beyond.
 
 ### Profiles
 
