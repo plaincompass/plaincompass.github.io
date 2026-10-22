@@ -25,4 +25,4 @@ identified in each article; published stories currently include South Korea.
 ### Korea Travel
 
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, and accessibility considerations.
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
