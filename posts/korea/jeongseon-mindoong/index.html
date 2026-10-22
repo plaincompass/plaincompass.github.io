@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is Mt. Mindungsan Worth Hiking in Jeongseon? | Slow Passport</title>
+  <meta name="description" content="A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://slowpassport.github.io/posts/korea/jeongseon-mindoong/">
+  <meta property="og:site_name" content="Slow Passport">
+  <meta property="og:title" content="Is Mt. Mindungsan Worth Hiking in Jeongseon? | Slow Passport">
+  <meta property="og:description" content="A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://slowpassport.github.io/posts/korea/jeongseon-mindoong/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Slow Passport","url":"https://slowpassport.github.io/"},{"@type":"BlogPosting","headline":"Is Mt. Mindungsan Worth Hiking in Jeongseon?","description":"A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://slowpassport.github.io/posts/korea/jeongseon-mindoong/"},"articleSection":"korea","keywords":["MtMindungsan","Jeongseon","KoreaTravel","MountainHike"],"author":{"@type":"Organization","@id":"https://slowpassport.github.io/#organization","name":"Slow Passport"},"publisher":{"@type":"Organization","@id":"https://slowpassport.github.io/#organization","name":"Slow Passport","url":"https://slowpassport.github.io/"},"contentLocation":{"@type":"Place","name":"Jeongseon, Gangwon-do, South Korea"},"datePublished":"2026-10-22T01:21:42Z","dateModified":"2026-10-23T08:37:50+09:00"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://slowpassport.github.io/"},{"@type":"ListItem","position":2,"name":"korea","item":"https://slowpassport.github.io/category/korea/"},{"@type":"ListItem","position":3,"name":"Is Mt. Mindungsan Worth Hiking in Jeongseon?","item":"https://slowpassport.github.io/posts/korea/jeongseon-mindoong/"}]}]}</script>
+  
+  <script>
+    (() => {
+      const storageKey = "slowpassport-theme";
+      const root = document.documentElement;
+      try {
+        const savedTheme = localStorage.getItem(storageKey);
+        if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
+      } catch {}
+      document.addEventListener("DOMContentLoaded", () => {
+        const passport = document.querySelector(".site-aside .passport");
+        if (!passport || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        try {
+          if (sessionStorage.getItem("slowpassport-intro-played") === "true") return;
+          sessionStorage.setItem("slowpassport-intro-played", "true");
+        } catch {}
+
+        const routePaths = [...passport.querySelectorAll('svg path[d^="M21 115"]')];
+        const routeMarker = passport.querySelector('svg circle[cx="112"][cy="66"]');
+        const routeLengths = routePaths.map((path) => path.getTotalLength());
+        routePaths.forEach((path, index) => {
+          path.style.strokeDasharray = routeLengths[index] + " " + routeLengths[index];
+          path.style.strokeDashoffset = routeLengths[index];
+        });
+        if (routeMarker) routeMarker.style.opacity = "0";
+
+        const bounds = passport.getBoundingClientRect();
+        const scale = Math.min(
+          3.5,
+          (window.innerWidth * 0.82) / bounds.width,
+          (window.innerHeight * 0.78) / bounds.height,
+        );
+        const offsetX = window.innerWidth / 2 - (bounds.left + bounds.width / 2);
+        const offsetY = window.innerHeight / 2 - (bounds.top + bounds.height / 2);
+
+        passport.style.transformOrigin = "center";
+        passport.style.zIndex = "10";
+        passport.style.willChange = "transform, opacity";
+        const animation = passport.animate([
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 0, offset: 0 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.18 },
+          { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.5 },
+          { transform: "translate(0, 0) scale(1) rotate(21deg)", opacity: 1, offset: 1 },
+        ], {
+          duration: 1600,
+          easing: "ease-in-out",
+        });
+
+        animation.onfinish = () => {
+          passport.style.removeProperty("transform-origin");
+          passport.style.removeProperty("z-index");
+          passport.style.removeProperty("will-change");
+
+          const pathAnimations = routePaths.map((path, index) => path.animate([
+            { strokeDashoffset: routeLengths[index] },
+            { strokeDashoffset: 0 },
+          ], {
+            duration: 1000,
+            easing: "ease-out",
+          }));
+
+          Promise.all(pathAnimations.map((pathAnimation) => pathAnimation.finished)).then(() => {
+            routePaths.forEach((path) => {
+              path.style.removeProperty("stroke-dasharray");
+              path.style.removeProperty("stroke-dashoffset");
+            });
+            if (!routeMarker) return;
+
+            const markerAnimation = routeMarker.animate([
+              { opacity: 0 },
+              { opacity: 0.85 },
+            ], {
+              duration: 300,
+              easing: "ease-out",
+            });
+            markerAnimation.onfinish = () => routeMarker.style.removeProperty("opacity");
+          });
+        };
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("theme-toggle");
+        if (!toggle) return;
+        toggle.checked = root.dataset.theme === "dark";
+        toggle.addEventListener("change", () => {
+          const selectedTheme = toggle.checked ? "dark" : "light";
+          root.dataset.theme = selectedTheme;
+          try {
+            localStorage.setItem(storageKey, selectedTheme);
+          } catch {}
+        });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
+        if (!videos.length || !("IntersectionObserver" in window)) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play().catch((error) => {
+                console.warn("Could not autoplay post video:", error);
+              });
+            } else {
+              video.pause();
+            }
+          }
+        }, { threshold: 0.25 });
+
+        videos.forEach((video) => {
+          video.muted = true;
+          video.controls = true;
+          video.playsInline = true;
+          observer.observe(video);
+        });
+      });
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <input class="theme-toggle-input" id="theme-toggle" type="checkbox" aria-label="Enable dark mode">
+    <div class="site-theme">
+    <header class="site-header">
+      <a class="brand" href="/">Slow Passport</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="/">All posts</a>
+        </nav>
+        <label class="theme-toggle-label" for="theme-toggle">
+          <span>Dark mode</span>
+          <span class="theme-switch" aria-hidden="true"></span>
+        </label>
+      </div>
+    </header>
+      <div class="site-layout">
+        <main class="site-main"><header class="post-header">
+  <p class="eyebrow">korea</p>
+  <h1>Is Mt. Mindungsan Worth Hiking in Jeongseon?</h1>
+  <p class="page-description">A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.</p>
+  <p class="post-location">Jeongseon, Gangwon-do, South Korea</p>
+  <dl class="post-levels" aria-label="Travel ratings">
+  <div class="post-level">
+    <dt>Hiking difficulty</dt>
+    <dd aria-label="Moderate, 3 out of 5 stars">
+      <span class="post-level-stars" aria-hidden="true">★★★☆☆</span>
+      <span class="post-level-description">Moderate (3/5)</span>
+    </dd>
+  </div>
+<div class="post-level">
+    <dt>Public transport access</dt>
+    <dd aria-label="Fair, 3 out of 5 stars">
+      <span class="post-level-stars" aria-hidden="true">★★★☆☆</span>
+      <span class="post-level-description">Fair (3/5)</span>
+    </dd>
+  </div>
+<div class="post-level">
+    <dt>Trail findability</dt>
+    <dd aria-label="Moderate, 3 out of 5 stars">
+      <span class="post-level-stars" aria-hidden="true">★★★☆☆</span>
+      <span class="post-level-description">Moderate (3/5)</span>
+    </dd>
+  </div>
+</dl>
+  <ul class="tag-list" aria-label="Tags"><li>#MtMindungsan</li><li>#Jeongseon</li><li>#KoreaTravel</li><li>#MountainHike</li></ul>
+</header>
+<article class="article"><p>Yes, Mt. Mindungsan is worth hiking if you enjoy mountain views, rocky terrain, and a slightly more rugged trail. I visited in May, during the transition from spring to early summer. The weather was a little warm, but the mountain was fresh and green. I went with a friend, and the main purpose of the trip was to hike and take photographs of the scenery.</p>
+<p>I booked the trip through Traveller’s Club, a tour service based in Korea. This was helpful because the reservation page and hiking information were mainly in Korean. If you can read Korean or have someone who can help with the booking, it can be a good option for planning the trip. If you do not speak Korean, it may take extra effort to understand the booking details, so it is best to confirm the information carefully before making a reservation.</p>
+<h2>Mt. Mindungsan hike at a glance</h2>
+<dl>
+  <dt>Location</dt>
+  <dd>Jeongseon, Gangwon-do, South Korea</dd>
+  <dt>Route</dt>
+  <dd>Started from the second parking lot near Nungjeon Village and descended toward Jeungsan Elementary School</dd>
+  <dt>Public transport</dt>
+  <dd>There are bus and train connections to the area, and access from Seoul is fairly manageable compared with more remote mountain areas.</dd>
+  <dt>Ascent time</dt>
+  <dd>It took me around 2 to 3 hours depending on my pace and breaks. The actual time varies with fitness and trail conditions.</dd>
+  <dt>Difficulty</dt>
+  <dd>Moderate to somewhat difficult (3/5), with several steep and slippery sections.</dd>
+  <dt>Facilities observed</dt>
+  <dd>Basic facilities were limited. The parking area and nearby roads were convenient, but there were fewer amenities along the trail itself.</dd>
+</dl>
+
+<h2>Why I went</h2>
+<p>I wanted to hike a mountain in Korea and also see the famous rocky terrain of Mt. Mindungsan. The main reason for the trip was the scenery and photography. I was especially interested in the mountain’s rugged texture and the dramatic look of the rock formations.</p>
+<h2>How the route felt</h2>
+<p>I started at the second parking lot near Nungjeon Village and began the climb. The beginning was not too difficult, and the uphill section was relatively short, so it felt manageable at first. However, once I reached the steeper part of the trail, the hike became more demanding.</p>
+<p>The most difficult section was between the summit area and the route leading toward Jeungsan Elementary School. That stretch was much steeper and more slippery than I expected, and it felt far harder than the initial climb. The path was rocky and uneven, so I had to be careful with my footing.</p>
+<h2>Difficulty and caution</h2>
+<p>I would describe the hike as moderate to somewhat difficult. The trail was not flat, and the slope became noticeably steeper in the later section. The route was more challenging than it first appeared, especially after the summit area when I started descending toward the school side.</p>
+<p>The section between the summit and Jeungsan Elementary School was the hardest part. It was quite steep and slippery, so it required extra care and a slower pace. I would definitely recommend being prepared for this part of the hike.</p>
+<h2>What I liked</h2>
+<p>The best part of Mt. Mindungsan was the scenery. The rock formations and the texture of the mountain made the trail visually interesting. It was a great place for photography, and the rugged terrain gave the hike a unique feel compared with more standard forest trails.</p>
+<p>I also liked that the mountain felt less crowded than some of the more famous hiking spots in Korea. The atmosphere was more peaceful and natural, which made the hike feel more rewarding.</p>
+<h2>Best season to visit</h2>
+<p>I went in May, which was pleasant, but I think the best time to visit may be from October to November. The mountain seems especially attractive in late autumn, when the temperature is cooler and the scenery may feel more dramatic. If you have the option, visiting during the autumn season is likely to be a more comfortable and visually rewarding experience.</p>
+<h2>What I was careful about</h2>
+<p>The hardest part was the descent toward Jeungsan Elementary School. The trail became surprisingly steep and slippery, and I had to slow down to avoid losing footing. It was not unsafe in a serious way, but it was definitely more challenging than the earlier uphill section.</p>
+<p>I also noticed that basic facilities were limited, especially along the mountain route. I would recommend bringing water and taking the trail seriously, especially if you are hiking after rain or on a hot day.</p>
+<h2>Is it worth visiting?</h2>
+<p>Yes, if you enjoy mountain scenery and slightly rugged trails, I would say it is worth visiting. The views and terrain were memorable, and the mountain has a strong visual character that makes it stand out from a typical city hike.</p>
+<p>For anyone who likes scenic hiking and is comfortable with moderate effort, Mt. Mindungsan is a good choice. However, beginners or travelers looking for a very easy and flat route may find the steep and slippery sections more difficult than expected.</p>
+<h2>Final thoughts</h2>
+<p>Mt. Mindungsan was a good hiking experience for me because it combined beautiful scenery with a trail that was a little more demanding than I had expected. The first part of the climb was manageable, but the stretch from the summit toward Jeungsan Elementary School was much steeper and slicker than I anticipated.</p>
+<p>If you are planning to go, I would suggest preparing for that section in advance and being careful with footing. The trail is rewarding, but it is better approached with some hiking fitness and realistic expectations. If you can visit in late autumn, it may be the most pleasant time to go.</p>
+</article>
+</main>
+        <aside class="site-aside" aria-label="About and categories">
+          <section class="aside-section">
+            <h2>About</h2>
+            <div class="profile-image" role="img" aria-label="Slow Passport travel journal passport cover">
+                <div class="passport">
+                    <svg class="profile-image" viewBox="0 0 180 132" role="img" aria-labelledby="profile-image-title">
+                        <title id="profile-image-title">A quiet trail winding through mountains</title>
+                        <rect x="1" y="1" width="178" height="130" rx="3" fill="var(--surface)" stroke="var(--line)"></rect>
+                        <circle cx="137" cy="34" r="14" fill="var(--accent)" opacity="0.85"></circle>
+                        <path d="M12 99 53 48l24 30 25-37 66 58v20H12z" fill="var(--green)" opacity="0.22"></path>
+                        <path d="m53 48 12 15-12-5-10 12zm49-7 17 24-15-7-12 13z" fill="var(--surface)" opacity="0.9"></path>
+                        <path d="M13 102 45 74l20 20 25-32 20 21 17-18 41 37v17H13z" fill="var(--green)" opacity="0.48"></path>
+                        <path d="M21 115c26-2 28-16 45-19 12-2 11-15 22-19 9-4 17-3 24-11" fill="none" stroke="var(--surface)" stroke-width="5" stroke-linecap="round"></path>
+                        <path d="M21 115c26-2 28-16 45-19 12-2 11-15 22-19 9-4 17-3 24-11" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 5"></path>
+                        <circle cx="112" cy="66" r="4" fill="var(--accent)"></circle>
+                    </svg>
+                </div>    
+            </div>
+            <p class="profile-name">Slow Passport</p>
+            <p>Personal travel experiences, destination reviews, hiking routes, accommodation notes, and public transport tips based on real journeys.</p>
+          </section>
+          <nav class="aside-section" aria-label="Post categories">
+            <h2>Categories</h2>
+            <ul class="category-nav"><li><a href="/category/korea/">korea</a></li></ul>
+          </nav>
+        </aside>
+      </div>
+      <footer class="site-footer">
+        
+        <div class="site-footer-credit">Slow Passport · Travel Notes</div>
+      </footer>
+  </div>
+</body>
+</html>
