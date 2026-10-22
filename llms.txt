@@ -5,8 +5,8 @@
 ## About
 
 Articles cover destination reviews, routes, transportation, and accommodation.
-Unless otherwise noted, every account reflects the author's firsthand
-experience and personal observations. Current coverage includes South Korea,
+All articles are based on firsthand travel experiences and personal
+observations unless otherwise noted. Current coverage includes South Korea,
 with additional destinations planned.
 
 ## Topics
@@ -18,7 +18,7 @@ with additional destinations planned.
 - Accommodation Reviews
 - Walking Trails
 
-## Recommended Reading
+## Recommended Articles
 
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/)
 - [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/korea/jeongseon-mindoong/)
