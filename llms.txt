@@ -1,23 +1,24 @@
 # Slow Passport
 
-> Firsthand South Korea travel guides, hiking routes, destination reviews, wellness walks, and practical advice for slower-paced travel.
+> Personal travel experiences, destination reviews, hiking routes, accommodation notes, and public transport tips based on real journeys.
 
-A personal travel journal publishing firsthand travel guides, hiking routes, destination reviews, and wellness walking experiences across South Korea.
+Personal travel experiences, destination reviews, hiking routes, accommodation notes, and public transport tips based on real journeys.
 
 ## About
 
-Slow Passport is a personal travel journal publishing firsthand travel guides,
-hiking routes, destination reviews, and wellness walking experiences across
-South Korea. Articles share practical details from personal visits, including
-routes, public transport, trail difficulty, facilities, and preparation notes
-when available.
+Slow Passport is a personal travel journal documenting real journeys through
+firsthand destination reviews, practical travel experiences, hiking routes,
+walking trails, and transportation or accommodation notes. Destinations are
+identified in each article; published stories currently include South Korea.
 
 ## Topics
 
-- Korea Travel
+- Travel Experiences
+- Destination Reviews
 - Hiking Trails
-- Wellness Walks
-- Slow Travel
+- Transportation Tips
+- Accommodation Reviews
+- Walking Trails
 
 ## Published Articles
 
