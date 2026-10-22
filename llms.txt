@@ -2,6 +2,10 @@
 
 > Slow Passport is an independent personal travel journal focused on firsthand hiking, walking, and travel experiences.
 
+## Website
+
+[https://slowpassport.github.io/](https://slowpassport.github.io/)
+
 ## About
 
 Articles cover destination reviews, routes, transportation, and accommodation.
@@ -20,14 +24,14 @@ with additional destinations planned.
 
 ## Recommended Articles
 
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/)
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/korea/jeongseon-mindoong/)
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/)
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/south-korea/gwanak/)
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/south-korea/jeongseon-mindoong/)
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/south-korea/geumsan-wellness-walk/)
 
 ## Published Articles
 
-### Korea Travel
+### South Korea
 
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/korea/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/south-korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/south-korea/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/south-korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
