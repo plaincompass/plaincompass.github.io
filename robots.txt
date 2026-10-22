@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://slowpassport.github.io/sitemap.xml
