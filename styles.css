@@ -101,6 +101,13 @@ a:hover {
   font-weight: 700;
 }
 
+.profile-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 16px;
+}
+
 .aside-section p {
   margin-block: 0 8px;
 }
@@ -341,6 +348,8 @@ h1 {
   --line: #dce1da;
   --accent: #a3422d;
   --green: #385a4b;
+  --passport-cover: #365b49;
+  --passport-foil: #c9aa5f;
   min-height: 100vh;
   color: var(--ink);
   background: var(--canvas);
@@ -357,6 +366,8 @@ html[data-theme="dark"] .site-theme {
   --line: #36413b;
   --accent: #ed9b7f;
   --green: #a8c9b7;
+  --passport-cover: #25372f;
+  --passport-foil: #dfc77e;
   color-scheme: dark;
 }
 
