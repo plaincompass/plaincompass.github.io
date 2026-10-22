@@ -300,7 +300,7 @@ h1 {
 .post-level dd {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1vw;
   margin: 0;
   width: 60%;
 }
