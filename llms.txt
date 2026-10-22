@@ -1,15 +1,13 @@
 # Slow Passport
 
-> Personal travel experiences, destination reviews, hiking routes, accommodation notes, and public transport tips based on real journeys.
-
-Personal travel experiences, destination reviews, hiking routes, accommodation notes, and public transport tips based on real journeys.
+> Slow Passport is an independent personal travel journal focused on firsthand hiking, walking, and travel experiences.
 
 ## About
 
-Slow Passport is a personal travel journal documenting real journeys through
-firsthand destination reviews, practical travel experiences, hiking routes,
-walking trails, and transportation or accommodation notes. Destinations are
-identified in each article; published stories currently include South Korea.
+Articles cover destination reviews, routes, transportation, and accommodation.
+Unless otherwise noted, every account reflects the author's firsthand
+experience and personal observations. Current coverage includes South Korea,
+with additional destinations planned.
 
 ## Topics
 
@@ -19,6 +17,12 @@ identified in each article; published stories currently include South Korea.
 - Transportation Tips
 - Accommodation Reviews
 - Walking Trails
+
+## Recommended Reading
+
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/korea/gwanak/)
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/korea/jeongseon-mindoong/)
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/korea/geumsan-wellness-walk/)
 
 ## Published Articles
 
