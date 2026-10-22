@@ -16,6 +16,28 @@
   <meta property="og:image:alt" content="Gwacheon Station">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Slow Passport","url":"https://slowpassport.github.io/"},{"@type":"BlogPosting","headline":"Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?","description":"A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.","inLanguage":"en","mainEntityOfPage":"https://slowpassport.github.io/posts/korea/gwanak/","articleSection":"korea","keywords":["MtGwanak","SeoulHiking","KoreaTravel","Gwacheon"],"author":{"@type":"Person","name":"Slow Passport"},"contentLocation":{"@type":"Place","name":"Gwacheon, Seoul, South Korea"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I get to Mt. Gwanak by public transport?","acceptedAnswer":{"@type":"Answer","text":"You can get there by subway. One convenient option is to take Line 4 to Gwacheon Station."}},{"@type":"Question","name":"Is there only one way to hike up the mountain?","acceptedAnswer":{"@type":"Answer","text":"No, there are several routes. The trail from Gwacheon Station is one of the easiest and quickest options."}},{"@type":"Question","name":"How is Mt. Gwanak connected to making wishes come true?","acceptedAnswer":{"@type":"Answer","text":"Some people describe the mountain as having “fire energy” and visit a prayer place near the summit. This is a local belief, not a guarantee that wishes will come true."}},{"@type":"Question","name":"Can it really help make your wishes come true?","acceptedAnswer":{"@type":"Answer","text":"I believe the experience felt meaningful to me. I got a new job about a month after I prayed, although I can’t say that the prayer caused it."}},{"@type":"Question","name":"Is hiking easy?","acceptedAnswer":{"@type":"Answer","text":"I didn’t find it very easy. If you’re not used to exercising, you may find it difficult."}}]}]}</script>
+  <script>
+    (() => {
+      const storageKey = "slowpassport-theme";
+      const root = document.documentElement;
+      try {
+        const savedTheme = localStorage.getItem(storageKey);
+        if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
+      } catch {}
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("theme-toggle");
+        if (!toggle) return;
+        toggle.checked = root.dataset.theme === "dark";
+        toggle.addEventListener("change", () => {
+          const selectedTheme = toggle.checked ? "dark" : "light";
+          root.dataset.theme = selectedTheme;
+          try {
+            localStorage.setItem(storageKey, selectedTheme);
+          } catch {}
+        });
+      });
+    })();
+  </script>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>

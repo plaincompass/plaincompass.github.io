@@ -348,7 +348,8 @@ h1 {
   transition: color 180ms ease, background-color 180ms ease;
 }
 
-#theme-toggle:checked + .site-theme {
+#theme-toggle:checked + .site-theme,
+html[data-theme="dark"] .site-theme {
   --canvas: #171c1a;
   --surface: #202725;
   --ink: #eff2ed;
@@ -416,12 +417,14 @@ h1 {
   transition: transform 180ms ease;
 }
 
-#theme-toggle:checked + .site-theme .theme-switch {
+#theme-toggle:checked + .site-theme .theme-switch,
+html[data-theme="dark"] .theme-toggle-label .theme-switch {
   border-color: #70917f;
   background: #385a4b;
 }
 
-#theme-toggle:checked + .site-theme .theme-switch::after {
+#theme-toggle:checked + .site-theme .theme-switch::after,
+html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
   transform: translateX(16px);
 }
 
