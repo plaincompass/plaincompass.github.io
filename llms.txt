@@ -1,10 +1,10 @@
-# Slow Passport
+# Plain Compass
 
-> Slow Passport, also known as SlowPassport, is a personal travel journal sharing firsthand travel experiences, destination reviews, hiking routes, accommodation insights, and practical transport tips.
+> Plain Compass is a personal travel journal sharing firsthand travel experiences, destination reviews, hiking routes, accommodation insights, and practical transport tips.
 
 ## Website
 
-[https://slowpassport.github.io/](https://slowpassport.github.io/)
+[https://plaincompass.github.io/](https://plaincompass.github.io/)
 
 ## About
 
@@ -24,21 +24,21 @@ with additional destinations planned.
 
 ## Recommended Articles
 
-- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://slowpassport.github.io/posts/china/datongvolcano/)
-- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://slowpassport.github.io/posts/china/datong/)
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/south-korea/gwanak/)
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/south-korea/jeongseon-mindoong/)
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/south-korea/geumsan-wellness-walk/)
+- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/)
+- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/)
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/)
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/jeongseon-mindoong/)
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/geumsan-wellness-walk/)
 
 ## Published Articles
 
 ### China
 
-- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://slowpassport.github.io/posts/china/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
-- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://slowpassport.github.io/posts/china/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
+- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
+- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
 
 ### South Korea
 
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://slowpassport.github.io/posts/south-korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://slowpassport.github.io/posts/south-korea/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://slowpassport.github.io/posts/south-korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.

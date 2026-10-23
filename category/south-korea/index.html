@@ -3,36 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>South Korea | Slow Passport</title>
-  <meta name="description" content="Published travel posts in the South Korea category.">
+  <title>South Korea Travel Guides | Plain Compass</title>
+  <meta name="description" content="Firsthand travel guides and trip reports from South Korea, with route details and practical observations.">
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://slowpassport.github.io/category/south-korea/">
-  <meta property="og:site_name" content="Slow Passport">
-  <meta property="og:title" content="South Korea | Slow Passport">
-  <meta property="og:description" content="Published travel posts in the South Korea category.">
+  <link rel="canonical" href="https://plaincompass.github.io/category/south-korea/">
+  <meta property="og:site_name" content="Plain Compass">
+  <meta property="og:title" content="South Korea Travel Guides | Plain Compass">
+  <meta property="og:description" content="Firsthand travel guides and trip reports from South Korea, with route details and practical observations.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://slowpassport.github.io/category/south-korea/">
+  <meta property="og:url" content="https://plaincompass.github.io/category/south-korea/">
   <meta name="twitter:card" content="summary">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Slow Passport","alternateName":["SlowPassport","slowpassport"],"url":"https://slowpassport.github.io/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Plain Compass","alternateName":["Plain Compass","plaincompass"],"url":"https://plaincompass.github.io/"}]}</script>
   
   <script>
     (() => {
-      const storageKey = "slowpassport-theme";
+      const storageKey = "plaincompass-theme";
       const root = document.documentElement;
       try {
         const savedTheme = localStorage.getItem(storageKey);
         if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
       } catch {}
       document.addEventListener("DOMContentLoaded", () => {
-        const passport = document.querySelector(".site-aside .passport");
-        if (!passport || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        const compass = document.querySelector(".site-aside .compass");
+        if (!compass || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         try {
-          if (sessionStorage.getItem("slowpassport-intro-played") === "true") return;
-          sessionStorage.setItem("slowpassport-intro-played", "true");
+          if (sessionStorage.getItem("plaincompass-intro-played") === "true") return;
+          sessionStorage.setItem("plaincompass-intro-played", "true");
         } catch {}
 
-        const routePaths = [...passport.querySelectorAll('svg path[d^="M21 115"]')];
-        const routeMarker = passport.querySelector('svg circle[cx="112"][cy="66"]');
+        const routePaths = [...compass.querySelectorAll('svg path[d^="M21 115"]')];
+        const routeMarker = compass.querySelector('svg circle[cx="112"][cy="66"]');
         const routeLengths = routePaths.map((path) => path.getTotalLength());
         routePaths.forEach((path, index) => {
           path.style.strokeDasharray = routeLengths[index] + " " + routeLengths[index];
@@ -40,7 +40,7 @@
         });
         if (routeMarker) routeMarker.style.opacity = "0";
 
-        const bounds = passport.getBoundingClientRect();
+        const bounds = compass.getBoundingClientRect();
         const scale = Math.min(
           3.5,
           (window.innerWidth * 0.82) / bounds.width,
@@ -49,10 +49,10 @@
         const offsetX = window.innerWidth / 2 - (bounds.left + bounds.width / 2);
         const offsetY = window.innerHeight / 2 - (bounds.top + bounds.height / 2);
 
-        passport.style.transformOrigin = "center";
-        passport.style.zIndex = "10";
-        passport.style.willChange = "transform, opacity";
-        const animation = passport.animate([
+        compass.style.transformOrigin = "center";
+        compass.style.zIndex = "10";
+        compass.style.willChange = "transform, opacity";
+        const animation = compass.animate([
           { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 0, offset: 0 },
           { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.18 },
           { transform: "translate(" + offsetX + "px, " + offsetY + "px) scale(" + scale + ") rotate(0deg)", opacity: 1, offset: 0.5 },
@@ -63,9 +63,9 @@
         });
 
         animation.onfinish = () => {
-          passport.style.removeProperty("transform-origin");
-          passport.style.removeProperty("z-index");
-          passport.style.removeProperty("will-change");
+          compass.style.removeProperty("transform-origin");
+          compass.style.removeProperty("z-index");
+          compass.style.removeProperty("will-change");
 
           const pathAnimations = routePaths.map((path, index) => path.animate([
             { strokeDashoffset: routeLengths[index] },
@@ -137,7 +137,7 @@
     <input class="theme-toggle-input" id="theme-toggle" type="checkbox" aria-label="Enable dark mode">
     <div class="site-theme">
     <header class="site-header">
-      <a class="brand" href="/">Slow Passport</a>
+      <a class="brand" href="/">Plain Compass</a>
       <div class="header-actions">
         <nav class="site-nav" aria-label="Main navigation">
           <a href="/">All posts</a>
@@ -151,8 +151,8 @@
       <div class="site-layout">
         <main class="site-main"><p class="eyebrow">Travel notes</p>
 <h1>South Korea</h1>
-<p class="page-description">Published travel posts in the South Korea category.</p>
-<section class="post-list" aria-label="Published posts"><article class="post-card">
+<p class="page-description">Firsthand travel guides and trip reports from South Korea, with route details and practical observations.</p>
+<section class="post-list" aria-label="Travel guides and trip reports"><article class="post-card">
   
   <div class="post-card-copy">
     <p class="post-meta"><a href="/category/south-korea/">South Korea</a> · Jeongseon, Gangwon-do, South Korea</p>
@@ -179,8 +179,8 @@
         <aside class="site-aside" aria-label="About and categories">
           <section class="aside-section">
             <h2>About</h2>
-            <div class="profile-image" role="img" aria-label="Slow Passport travel journal passport cover">
-                <div class="passport">
+            <div class="profile-image" role="img" aria-label="Plain Compass travel journal compass cover">
+                <div class="compass">
                     <svg class="profile-image" viewBox="0 0 180 132" role="img" aria-labelledby="profile-image-title">
                         <title id="profile-image-title">A quiet trail winding through mountains</title>
                         <rect x="1" y="1" width="178" height="130" rx="3" fill="var(--surface)" stroke="var(--line)"></rect>
@@ -194,8 +194,8 @@
                     </svg>
                 </div>    
             </div>
-            <p class="profile-name">Slow Passport</p>
-            <p>Slow Passport, also known as SlowPassport, is a personal travel journal sharing firsthand travel experiences, destination reviews, hiking routes, accommodation insights, and practical transport tips.</p>
+            <p class="profile-name">Plain Compass</p>
+            <p>Plain Compass is a personal travel journal sharing firsthand travel experiences, destination reviews, hiking routes, accommodation insights, and practical transport tips.</p>
           </section>
           <nav class="aside-section" aria-label="Post categories">
             <h2>Categories</h2>
@@ -206,7 +206,7 @@
       </div>
       <footer class="site-footer">
         
-        <div class="site-footer-credit">Slow Passport · Travel Notes</div>
+        <div class="site-footer-credit">Plain Compass · Travel Notes</div>
       </footer>
   </div>
 </body>
