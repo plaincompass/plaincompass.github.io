@@ -106,33 +106,43 @@ a:hover {
   place-items: center;
   width: 100%;
   max-width: 180px;
-  aspect-ratio: 180 / 132;
+  aspect-ratio: 180 / 145;
   margin: 0 0 16px;
   border: 1px solid var(--line);
   background: var(--surface);
+  container-type: inline-size;
 }
 
 .compass-book {
   position: relative;
+  width: 68%;
+  height: 90%;
+}
+
+.compass-book-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--compass-foil) 72%, transparent);
+  border-radius: 2.2cqw 3.3cqw 3.3cqw 2.2cqw;
+  background: var(--compass-cover);
+  box-shadow: 1.1cqw 1.7cqw 0 color-mix(in srgb, var(--compass-cover) 72%, transparent);
+  color: var(--compass-foil);
+}
+
+.compass-book-front {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 56%;
-  height: 86%;
-  padding-top: 9px;
-  border: 1px solid var(--compass-foil);
-  border-radius: 5px 7px 7px 5px;
-  background: var(--compass-cover);
-  box-shadow: 3px 3px 0 color-mix(in srgb, var(--compass-cover) 72%, transparent);
-  color: var(--compass-foil);
+  padding-top: 4.4cqw;
 }
 
-.compass-book::before {
+.compass-book-front::before {
   position: absolute;
-  top: 6px;
-  bottom: 6px;
-  left: 9px;
+  top: 3.3cqw;
+  bottom: 3.3cqw;
+  left: 5cqw;
   width: 1px;
   background: currentColor;
   content: "";
@@ -140,55 +150,51 @@ a:hover {
 }
 
 .compass-kicker {
+  position: relative;
+  z-index: 1;
   font-family: Arial, sans-serif;
-  font-size: 5px;
+  font-size: 2.8cqw;
+  letter-spacing: 0.16em;
   font-weight: 700;
 }
 
 .compass-title {
-  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+  margin-top: 2.2cqw;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 8px;
+  font-size: 4.4cqw;
   font-weight: 700;
 }
 
 .compass-emblem {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
-  margin-top: 5px;
+  width: 15cqw;
+  height: 15cqw;
+  margin-top: 2.2cqw;
   border: 1px solid currentColor;
   border-radius: 50%;
 }
 
 .compass-emblem svg {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 15.6cqw;
+  height: 15.6cqw;
+  transform: translate(-0.56cqw, -0.56cqw);
+  transform-origin: center;
 }
 
 .compass-rule {
+  position: relative;
+  z-index: 1;
   width: 48%;
   height: 1px;
-  margin-top: 7px;
+  margin-top: 2.8cqw;
   background: currentColor;
   opacity: 0.65;
-}
-
-.compass-stamp {
-  position: absolute;
-  right: 7px;
-  bottom: 7px;
-  display: grid;
-  place-items: center;
-  width: 19px;
-  aspect-ratio: 1;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-family: Arial, sans-serif;
-  font-size: 6px;
-  font-weight: 700;
 }
 
 .aside-section p {
@@ -595,6 +601,30 @@ html[data-theme="dark"] .site-theme {
   gap: 24px;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.mobile-menu-toggle svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .theme-toggle-label {
   display: inline-flex;
   align-items: center;
@@ -747,11 +777,39 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
     gap: 0;
   }
 
+  .profile-image {
+    max-width: none;
+  }
+
+  .mobile-menu-toggle {
+    display: grid;
+    order: 1;
+  }
+
+  .site-aside {
+    display: none;
+  }
+
   .site-aside {
     margin: 0 0 36px;
     padding: 24px 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+
+  .site-layout.mobile-menu-open .site-aside {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+  }
+
+  .site-layout.mobile-menu-open .site-aside > nav.aside-section {
+    order: -1;
+    margin: 0 0 34px;
+  }
+
+  .site-layout.mobile-menu-open .site-main {
+    grid-row: 2;
   }
 }
 
@@ -794,19 +852,73 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
   }
 }
 
-/* 로고 추가 */
-.compass { width:80%; position: relative; height: 160px; background: transparent; transform: rotate(21deg); background-color: var(--line); border: 2px solid var(--line);}
-.compass::before{ content:"Plain Compass"; color : var(--ink); display:'block'; position: absolute; top: 15px; left:0; font-size: 15px; text-align: center; width: 100%;font-weight: bold;}
-.compass svg { position: absolute; width: 100%; bottom: 0; margin: 0; padding: 0; left: 0;}
+.compass {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
 
-@keyframes route-dash-flow {
+.compass-landscape {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 58%;
+}
+
+@keyframes compass-route-draw {
   to {
-    stroke-dashoffset: -7;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes compass-route-marker-appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.compass-landscape [data-route] {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: compass-route-draw 1.8s ease-out forwards;
+}
+
+.compass-landscape [data-route-marker] {
+  opacity: 0;
+  animation: compass-route-marker-appear 250ms ease-out 1.55s forwards;
+}
+
+@keyframes compass-emblem-spin {
+  to {
+    transform: translate(-0.56cqw, -0.56cqw) rotate(360deg);
   }
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .compass:hover svg path[stroke="var(--accent)"][stroke-dasharray="2 5"] {
-    animation: route-dash-flow 500ms linear infinite;
+  .compass:hover .compass-emblem svg {
+    animation: compass-emblem-spin 1.2s linear infinite;
+  }
+}
+
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  .compass-emblem svg {
+    animation: compass-emblem-spin 1.2s linear 1.8s 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .compass-landscape [data-route] {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .compass-landscape [data-route-marker] {
+    opacity: 1;
+    animation: none;
   }
 }
