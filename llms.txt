@@ -1,6 +1,6 @@
 # Slow Passport
 
-> Slow Passport is an independent personal travel journal focused on firsthand hiking, walking, and travel experiences.
+> Slow Passport, also known as SlowPassport, is a personal travel journal sharing firsthand travel experiences, destination reviews, hiking routes, accommodation insights, and practical transport tips.
 
 ## Website
 
