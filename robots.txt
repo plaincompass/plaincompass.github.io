@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://plaincompass.github.io/sitemap.xml
+Sitemap: https://plaincompass.github.io/huegrove/sitemap.xml
