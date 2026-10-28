@@ -24,6 +24,7 @@ with additional destinations planned.
 
 ## Recommended Articles
 
+- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Sleeper Train from Xining](https://plaincompass.github.io/posts/china/chaka-salt-lake/)
 - [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/)
 - [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/)
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/)
@@ -35,6 +36,7 @@ with additional destinations planned.
 ### China
 
 - [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
+- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Sleeper Train from Xining](https://plaincompass.github.io/posts/china/chaka-salt-lake/): My experience visiting Chaka Salt Lake by sleeper train, including photography spots, crowds, altitude tips, and Sky One Scenic Area.
 - [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
 
 ### South Korea

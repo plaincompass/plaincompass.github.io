@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://plaincompass.github.io/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/category/china/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/category/south-korea/</loc>
@@ -15,6 +15,10 @@
   <url>
     <loc>https://plaincompass.github.io/posts/china/datong/</loc>
     <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://plaincompass.github.io/posts/china/chaka-salt-lake/</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/posts/south-korea/gwanak/</loc>
