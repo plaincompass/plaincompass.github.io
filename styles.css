@@ -771,6 +771,18 @@ html[data-theme="dark"] .theme-toggle-label .theme-switch::after {
   color: var(--muted);
 }
 
+.article-attribution{
+  font-size: 12px;
+  text-align: center;
+  border: 1px dotted #fff;
+  padding:10px;
+}
+.article-attribution p{
+  margin: 0; 
+  padding: 0;
+  line-height: 20px;
+}
+
 @media (max-width: 760px) {
   .site-layout {
     grid-template-columns: minmax(0, 1fr);
