@@ -67,6 +67,19 @@ a:hover {
   padding-block: 56px 80px;
 }
 
+.site-main table{
+  font-size: 12px;
+  border-spacing: 0;
+  text-align: center;
+}
+.site-main table th,td{ 
+  border: 1px solid var(--line);
+  padding: 5px;
+}
+.site-main table td:nth-of-type(1){
+  width: 95px;
+} 
+
 .site-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
