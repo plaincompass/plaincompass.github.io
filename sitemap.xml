@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://plaincompass.github.io/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/category/china/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://plaincompass.github.io/category/japan/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/category/south-korea/</loc>
@@ -43,6 +43,10 @@
   <url>
     <loc>https://plaincompass.github.io/posts/japan/nukabiralake/</loc>
     <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://plaincompass.github.io/posts/japan/tokachionsenobihiro/</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://plaincompass.github.io/huegrove/</loc>
