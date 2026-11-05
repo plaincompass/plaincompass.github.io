@@ -24,7 +24,7 @@ with additional destinations planned.
 
 ## Recommended Articles
 
-- [Subway Journeys Through Beijing’s Imperial Landmarks and Great Wall Views](https://plaincompass.github.io/posts/china/beijinghub/)
+- [Beijing Travel Hub: Forbidden City, Summer Palace, Temple of Heaven, and Huanghua Qingcheng](https://plaincompass.github.io/posts/china/beijinghub/)
 - [Summer Palace in Beijing: Views from the Tower of Buddhist Incense](https://plaincompass.github.io/posts/china/summerpalace/)
 - [Crowded but Stunning: My Quick Visit to Beijing's Temple of Heaven](https://plaincompass.github.io/posts/china/templeofheaven/)
 - [Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng](https://plaincompass.github.io/posts/china/huanghuaqingcheng/)
@@ -47,13 +47,13 @@ with additional destinations planned.
 
 ### China
 
+- [Beijing Travel Hub: Forbidden City, Summer Palace, Temple of Heaven, and Huanghua Qingcheng](https://plaincompass.github.io/posts/china/beijinghub/): The trip covered Beijing’s major imperial landmarks, with a separate day tour to Huanghua Qingcheng for boat rides and Great Wall scenery.
 - [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
 - [Crowded but Stunning: My Quick Visit to Beijing's Temple of Heaven](https://plaincompass.github.io/posts/china/templeofheaven/): The Hall of Prayer for Good Harvests was grander than expected, but dense crowds and influencer photo shoots made the park feel busier than the Forbidden City.
 - [Forbidden City in June: Crowded Heat, North Gate Garden, and Water Reflections](https://plaincompass.github.io/posts/china/forbiddencity/): I braved a 30-minute wait and sweltering crowds at the Forbidden City, finding a quiet garden near the north gate and peaceful waterfront reflections.
 - [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/chaka-salt-lake/): My experience visiting Chaka Salt Lake from Xining, including the five-hour daytime sleeper train, photography spots, crowds, altitude preparation, and why staying overnight is worth it.
 - [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
 - [Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng](https://plaincompass.github.io/posts/china/huanghuaqingcheng/): Rode a boat to a submerged section of the Great Wall, took a lift train up the mountain, and enjoyed quiet riverside views and a peaceful walk.
-- [Subway Journeys Through Beijing’s Imperial Landmarks and Great Wall Views](https://plaincompass.github.io/posts/china/beijinghub/): Subway rides connected visits to the Forbidden City, Summer Palace, and Temple of Heaven, while Huanghua Qingcheng added boat rides and Great Wall scenery.
 - [Summer Palace in Beijing: Views from the Tower of Buddhist Incense](https://plaincompass.github.io/posts/china/summerpalace/): I spent two hours exploring the Summer Palace in Beijing, enjoying panoramic views from the Tower of Buddhist Incense and the park's peaceful atmosphere.
 - [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/taerusu/): It takes 20 minutes to climb the hill to reach Ta'ershan at 2,600m altitude. It is characterized by monks' chants and 7 stone stupas at the entrance.
 - [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/xining/): 3N/4D trip to Xining for Qinghai Lake. Dry, cool late-August weather with stunning rocky mountain views. Taxi transfer cost 120 yuan. Use Alipay/WeChat Pay.
