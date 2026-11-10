@@ -65,6 +65,44 @@
         });
       });
       document.addEventListener("DOMContentLoaded", () => {
+        const categoryNav = document.querySelector(".category-nav");
+        const expandAllButton = document.querySelector(".category-nav-expand-all");
+        if (!categoryNav || !expandAllButton) return;
+
+        const categoryToggles = [...categoryNav.querySelectorAll(".category-nav-toggle")];
+        const setExpanded = (toggle, expanded) => {
+          const children = document.getElementById(toggle.getAttribute("aria-controls"));
+          if (!children) return;
+          toggle.setAttribute("aria-expanded", String(expanded));
+          toggle.setAttribute(
+            "aria-label",
+            `${expanded ? "Collapse" : "Expand"} ${toggle.parentElement.querySelector("a, span").textContent.trim()} categories`,
+          );
+          toggle.querySelector("span").textContent = expanded ? "-" : "+";
+          children.hidden = !expanded;
+        };
+        const updateExpandAllButton = () => {
+          const allExpanded = categoryToggles.every(
+            (toggle) => toggle.getAttribute("aria-expanded") === "true",
+          );
+          expandAllButton.textContent = allExpanded ? "Collapse all" : "Expand all";
+          expandAllButton.setAttribute("aria-expanded", String(allExpanded));
+        };
+
+        categoryNav.addEventListener("click", (event) => {
+          const toggle = event.target.closest(".category-nav-toggle");
+          if (!toggle) return;
+          setExpanded(toggle, toggle.getAttribute("aria-expanded") !== "true");
+          updateExpandAllButton();
+        });
+        expandAllButton.addEventListener("click", () => {
+          const expand = expandAllButton.getAttribute("aria-expanded") !== "true";
+          categoryToggles.forEach((toggle) => setExpanded(toggle, expand));
+          updateExpandAllButton();
+        });
+        updateExpandAllButton();
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
         if (!videos.length || !("IntersectionObserver" in window)) return;
 
@@ -228,12 +266,12 @@
           </section>
           <nav class="aside-section" aria-label="Post categories">
             <h2>Categories</h2>
-            <ul class="category-nav"><li><a href="/category/china/">China</a><ul class="category-nav-children"><li><a href="/category/china/beijing/">Beijing</a></li>
+            <button class="category-nav-expand-all" type="button" aria-expanded="false">Expand all</button><ul class="category-nav"><li><div class="category-nav-item"><a href="/category/china/">China</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-0" aria-label="Expand China categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-0" hidden><li><a href="/category/china/beijing/">Beijing</a></li>
 <li><a href="/category/china/datong/">Datong</a></li>
 <li><a href="/category/china/qinghai/">Qinghai</a></li>
 <li><a href="/category/china/shaghai/">Shaghai</a></li></ul></li>
-<li><a href="/category/japan/">Japan</a><ul class="category-nav-children"><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
-<li><a href="/category/south-korea/">South Korea</a><ul class="category-nav-children"><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
+<li><div class="category-nav-item"><a href="/category/japan/">Japan</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-5" aria-label="Expand Japan categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-5" hidden><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
+<li><div class="category-nav-item"><a href="/category/south-korea/">South Korea</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-7" aria-label="Expand South Korea categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-7" hidden><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
 <li><a href="/category/south-korea/gangwon/">Gangwon</a></li>
 <li><a href="/category/south-korea/seoul/">Seoul</a></li></ul></li></ul>
           </nav>

@@ -226,12 +226,50 @@ a:hover {
   text-decoration: none;
 }
 
+.category-nav-expand-all {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.category-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.category-nav-toggle {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
 .category-nav-children {
   display: grid;
   gap: 8px;
   margin: 8px 0 0;
   padding: 0 0 0 14px;
   list-style: none;
+}
+
+.category-nav-children[hidden] {
+  display: none;
 }
 
 .eyebrow,

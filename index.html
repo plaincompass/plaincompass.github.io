@@ -65,6 +65,44 @@
         });
       });
       document.addEventListener("DOMContentLoaded", () => {
+        const categoryNav = document.querySelector(".category-nav");
+        const expandAllButton = document.querySelector(".category-nav-expand-all");
+        if (!categoryNav || !expandAllButton) return;
+
+        const categoryToggles = [...categoryNav.querySelectorAll(".category-nav-toggle")];
+        const setExpanded = (toggle, expanded) => {
+          const children = document.getElementById(toggle.getAttribute("aria-controls"));
+          if (!children) return;
+          toggle.setAttribute("aria-expanded", String(expanded));
+          toggle.setAttribute(
+            "aria-label",
+            `${expanded ? "Collapse" : "Expand"} ${toggle.parentElement.querySelector("a, span").textContent.trim()} categories`,
+          );
+          toggle.querySelector("span").textContent = expanded ? "-" : "+";
+          children.hidden = !expanded;
+        };
+        const updateExpandAllButton = () => {
+          const allExpanded = categoryToggles.every(
+            (toggle) => toggle.getAttribute("aria-expanded") === "true",
+          );
+          expandAllButton.textContent = allExpanded ? "Collapse all" : "Expand all";
+          expandAllButton.setAttribute("aria-expanded", String(allExpanded));
+        };
+
+        categoryNav.addEventListener("click", (event) => {
+          const toggle = event.target.closest(".category-nav-toggle");
+          if (!toggle) return;
+          setExpanded(toggle, toggle.getAttribute("aria-expanded") !== "true");
+          updateExpandAllButton();
+        });
+        expandAllButton.addEventListener("click", () => {
+          const expand = expandAllButton.getAttribute("aria-expanded") !== "true";
+          categoryToggles.forEach((toggle) => setExpanded(toggle, expand));
+          updateExpandAllButton();
+        });
+        updateExpandAllButton();
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
         if (!videos.length || !("IntersectionObserver" in window)) return;
 
@@ -120,7 +158,7 @@
 <section class="post-list" aria-label="Travel guides and trip reports"><article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Shanghai Disneyland</p>
+    <p class="post-location"><a href="/category/china/shaghai/">Shaghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/shaghai/shanghai-disneyland/">Shanghai Disneyland: Zootopia Village &amp; Cloud Time Hotel Stay</a><span class="post-new-label">NEW</span></h2>
     <p>Visited Zootopia Village at Shanghai Disneyland, checked attraction wait times with the Shanghai Disney app, and stayed at Cloud Time Hotel. The moderate crowds and nighttime lighting made the visit memorable.</p>
   </div>
@@ -128,7 +166,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Zhujiajiao, Qingpu District</p>
+    <p class="post-location"><a href="/category/china/shaghai/">Shaghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/shaghai/zhujiajiao/">Zhujiajiao: A Quiet Water Village Escape Near Shanghai</a></h2>
     <p>Sitting on a swing bench under a purple acacia tree, I found Zhujiajiao peaceful and uncrowded. Easy subway access and flat paths made this historic water village a perfect quiet break from Shanghai.</p>
   </div>
@@ -136,7 +174,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Wukang Mansion, Shanghai</p>
+    <p class="post-location"><a href="/category/china/shaghai/">Shaghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/shaghai/wukang-mansion/">Wukang Mansion: Early Morning Photos &amp; Home Inn Stay</a></h2>
     <p>Stayed at Home Inn for a 30-second walk to Wukang Mansion. Captured quiet early morning photos before crowds arrived and enjoyed nearby bakeries.</p>
   </div>
@@ -144,7 +182,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/beijinghub/">Beijing Travel Hub: Forbidden City, Summer Palace, Temple of Heaven, and Huanghua Qingcheng</a></h2>
     <p>The trip covered Beijing’s major imperial landmarks, with a separate day tour to Huanghua Qingcheng for boat rides and Great Wall scenery.</p>
   </div>
@@ -152,7 +190,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Summer Palace, Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/summerpalace/">Summer Palace in Beijing: Views from the Tower of Buddhist Incense</a></h2>
     <p>I spent two hours exploring the Summer Palace in Beijing, enjoying panoramic views from the Tower of Buddhist Incense and the park&#39;s peaceful atmosphere.</p>
   </div>
@@ -160,7 +198,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/templeofheaven/">Crowded but Stunning: My Quick Visit to Beijing&#39;s Temple of Heaven</a></h2>
     <p>The Hall of Prayer for Good Harvests was grander than expected, but dense crowds and influencer photo shoots made the park feel busier than the Forbidden City.</p>
   </div>
@@ -168,7 +206,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Huanghua Qingcheng, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/huanghuaqingcheng/">Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng</a></h2>
     <p>Rode a boat to a submerged section of the Great Wall, took a lift train up the mountain, and enjoyed quiet riverside views and a peaceful walk.</p>
   </div>
@@ -176,7 +214,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/forbiddencity/">Forbidden City in June: Crowded Heat, North Gate Garden, and Water Reflections</a></h2>
     <p>I braved a 30-minute wait and sweltering crowds at the Forbidden City, finding a quiet garden near the north gate and peaceful waterfront reflections.</p>
   </div>
@@ -184,7 +222,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Xining, Qinghai, China</p>
+    <p class="post-location"><a href="/category/china/qinghai/">Qinghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/qinghai/xininghub/">Xining: Bus to Ta&#39;ershan and Train to Chaka Salt Lake</a></h2>
     <p>Took Bus 909 to Ta&#39;ershan for a 20-minute uphill walk and a 5-hour sleeper train to Chaka Salt Lake from Xining.</p>
   </div>
@@ -192,7 +230,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Xining, Qinghai, China</p>
+    <p class="post-location"><a href="/category/china/qinghai/">Qinghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/qinghai/xining/">Xining, China: Rocky Mountains and Dry Late-August Weather</a></h2>
     <p>3N/4D trip to Xining for Qinghai Lake. Dry, cool late-August weather with stunning rocky mountain views. Taxi transfer cost 120 yuan. Use Alipay/WeChat Pay.</p>
   </div>
@@ -200,7 +238,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Ta&#39;ershan, Qinghai Province, China</p>
+    <p class="post-location"><a href="/category/china/qinghai/">Qinghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/qinghai/taerusu/">Ta&#39;ershan Monastery: Monks&#39; Chants and a 2,600m Altitude Walk</a></h2>
     <p>It takes 20 minutes to climb the hill to reach Ta&#39;ershan at 2,600m altitude. It is characterized by monks&#39; chants and 7 stone stupas at the entrance.</p>
   </div>
@@ -208,7 +246,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Obihiro, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/obihirohub/">Obihiro Travel Hub</a></h2>
     <p>Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.</p>
   </div>
@@ -216,7 +254,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Tokachikawa Onsen (Obihiro), Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/tokachionsenobihiro/">Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido</a></h2>
     <p>A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.</p>
   </div>
@@ -224,7 +262,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Nukabira Lake, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/nukabiralake/">Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido</a></h2>
     <p>A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.</p>
   </div>
@@ -232,7 +270,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Obihiro, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/obihiro/">Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon</a></h2>
     <p>Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.</p>
   </div>
@@ -240,7 +278,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Chaka Salt Lake</p>
+    <p class="post-location"><a href="/category/china/qinghai/">Qinghai</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/qinghai/chaka-salt-lake/">Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining</a></h2>
     <p>My experience visiting Chaka Salt Lake from Xining, including the five-hour daytime sleeper train, photography spots, crowds, altitude preparation, and why staying overnight is worth it.</p>
   </div>
@@ -248,7 +286,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Datong, Shanxi, China</p>
+    <p class="post-location"><a href="/category/china/datong/">Datong</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/datong/datongvolcano/">Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?</a></h2>
     <p>A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.</p>
   </div>
@@ -256,7 +294,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Datong, Shanxi, China</p>
+    <p class="post-location"><a href="/category/china/datong/">Datong</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/datong/datong/">Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?</a></h2>
     <p>My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.</p>
   </div>
@@ -264,7 +302,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Gwacheon, Seoul, South Korea</p>
+    <p class="post-location"><a href="/category/south-korea/seoul/">Seoul</a> / <a href="/category/south-korea/">South Korea</a></p>
     <h2><a href="/posts/south-korea/seoul/gwanak/">Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?</a></h2>
     <p>A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.</p>
   </div>
@@ -272,7 +310,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Jeongseon, Gangwon-do, South Korea</p>
+    <p class="post-location"><a href="/category/south-korea/gangwon/">Gangwon</a> / <a href="/category/south-korea/">South Korea</a></p>
     <h2><a href="/posts/south-korea/gangwon/jeongseon-mindoong/">Is Mt. Mindungsan Worth Hiking in Jeongseon?</a></h2>
     <p>A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.</p>
   </div>
@@ -280,7 +318,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Geumsan, Chungcheongnam-do, South Korea</p>
+    <p class="post-location"><a href="/category/south-korea/chungnam/">Chungnam</a> / <a href="/category/south-korea/">South Korea</a></p>
     <h2><a href="/posts/south-korea/chungnam/geumsan-wellness-walk/">Is the Geumsan Wellness Walking Challenge a Difficult Hike?</a></h2>
     <p>A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.</p>
   </div>
@@ -318,12 +356,12 @@
           </section>
           <nav class="aside-section" aria-label="Post categories">
             <h2>Categories</h2>
-            <ul class="category-nav"><li><a href="/category/china/">China</a><ul class="category-nav-children"><li><a href="/category/china/beijing/">Beijing</a></li>
+            <button class="category-nav-expand-all" type="button" aria-expanded="false">Expand all</button><ul class="category-nav"><li><div class="category-nav-item"><a href="/category/china/">China</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-0" aria-label="Expand China categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-0" hidden><li><a href="/category/china/beijing/">Beijing</a></li>
 <li><a href="/category/china/datong/">Datong</a></li>
 <li><a href="/category/china/qinghai/">Qinghai</a></li>
 <li><a href="/category/china/shaghai/">Shaghai</a></li></ul></li>
-<li><a href="/category/japan/">Japan</a><ul class="category-nav-children"><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
-<li><a href="/category/south-korea/">South Korea</a><ul class="category-nav-children"><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
+<li><div class="category-nav-item"><a href="/category/japan/">Japan</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-5" aria-label="Expand Japan categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-5" hidden><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
+<li><div class="category-nav-item"><a href="/category/south-korea/">South Korea</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-7" aria-label="Expand South Korea categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-7" hidden><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
 <li><a href="/category/south-korea/gangwon/">Gangwon</a></li>
 <li><a href="/category/south-korea/seoul/">Seoul</a></li></ul></li></ul>
           </nav>

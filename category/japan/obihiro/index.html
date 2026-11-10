@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Japan/Obihiro Travel Guides | Plain Compass</title>
-  <meta name="description" content="Firsthand travel guides and trip reports from Japan/Obihiro, with route details and practical observations.">
+  <title>Obihiro Travel Guides | Plain Compass</title>
+  <meta name="description" content="Firsthand travel guides and trip reports from Obihiro, with route details and practical observations.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://plaincompass.github.io/category/japan/obihiro/">
   <meta property="og:site_name" content="Plain Compass">
-  <meta property="og:title" content="Japan/Obihiro Travel Guides | Plain Compass">
-  <meta property="og:description" content="Firsthand travel guides and trip reports from Japan/Obihiro, with route details and practical observations.">
+  <meta property="og:title" content="Obihiro Travel Guides | Plain Compass">
+  <meta property="og:description" content="Firsthand travel guides and trip reports from Obihiro, with route details and practical observations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://plaincompass.github.io/category/japan/obihiro/">
   <meta name="twitter:card" content="summary">
@@ -65,6 +65,44 @@
         });
       });
       document.addEventListener("DOMContentLoaded", () => {
+        const categoryNav = document.querySelector(".category-nav");
+        const expandAllButton = document.querySelector(".category-nav-expand-all");
+        if (!categoryNav || !expandAllButton) return;
+
+        const categoryToggles = [...categoryNav.querySelectorAll(".category-nav-toggle")];
+        const setExpanded = (toggle, expanded) => {
+          const children = document.getElementById(toggle.getAttribute("aria-controls"));
+          if (!children) return;
+          toggle.setAttribute("aria-expanded", String(expanded));
+          toggle.setAttribute(
+            "aria-label",
+            `${expanded ? "Collapse" : "Expand"} ${toggle.parentElement.querySelector("a, span").textContent.trim()} categories`,
+          );
+          toggle.querySelector("span").textContent = expanded ? "-" : "+";
+          children.hidden = !expanded;
+        };
+        const updateExpandAllButton = () => {
+          const allExpanded = categoryToggles.every(
+            (toggle) => toggle.getAttribute("aria-expanded") === "true",
+          );
+          expandAllButton.textContent = allExpanded ? "Collapse all" : "Expand all";
+          expandAllButton.setAttribute("aria-expanded", String(allExpanded));
+        };
+
+        categoryNav.addEventListener("click", (event) => {
+          const toggle = event.target.closest(".category-nav-toggle");
+          if (!toggle) return;
+          setExpanded(toggle, toggle.getAttribute("aria-expanded") !== "true");
+          updateExpandAllButton();
+        });
+        expandAllButton.addEventListener("click", () => {
+          const expand = expandAllButton.getAttribute("aria-expanded") !== "true";
+          categoryToggles.forEach((toggle) => setExpanded(toggle, expand));
+          updateExpandAllButton();
+        });
+        updateExpandAllButton();
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
         if (!videos.length || !("IntersectionObserver" in window)) return;
 
@@ -114,12 +152,12 @@
     </header>
       <div class="site-layout">
         <main class="site-main"><p class="eyebrow">Travel notes</p>
-<h1>Japan/Obihiro</h1>
-<p class="page-description">Firsthand travel guides and trip reports from Japan/Obihiro, with route details and practical observations.</p>
+<h1>Obihiro</h1>
+<p class="page-description">Firsthand travel guides and trip reports from Obihiro, with route details and practical observations.</p>
 <section class="post-list" aria-label="Travel guides and trip reports"><article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Obihiro, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/obihirohub/">Obihiro Travel Hub</a></h2>
     <p>Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.</p>
   </div>
@@ -127,7 +165,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Tokachikawa Onsen (Obihiro), Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/tokachionsenobihiro/">Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido</a></h2>
     <p>A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.</p>
   </div>
@@ -135,7 +173,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Nukabira Lake, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/nukabiralake/">Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido</a></h2>
     <p>A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.</p>
   </div>
@@ -143,7 +181,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Obihiro, Hokkaido, Japan</p>
+    <p class="post-location"><a href="/category/japan/obihiro/">Obihiro</a> / <a href="/category/japan/">Japan</a></p>
     <h2><a href="/posts/japan/obihiro/obihiro/">Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon</a></h2>
     <p>Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.</p>
   </div>
@@ -181,12 +219,12 @@
           </section>
           <nav class="aside-section" aria-label="Post categories">
             <h2>Categories</h2>
-            <ul class="category-nav"><li><a href="/category/china/">China</a><ul class="category-nav-children"><li><a href="/category/china/beijing/">Beijing</a></li>
+            <button class="category-nav-expand-all" type="button" aria-expanded="false">Expand all</button><ul class="category-nav"><li><div class="category-nav-item"><a href="/category/china/">China</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-0" aria-label="Expand China categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-0" hidden><li><a href="/category/china/beijing/">Beijing</a></li>
 <li><a href="/category/china/datong/">Datong</a></li>
 <li><a href="/category/china/qinghai/">Qinghai</a></li>
 <li><a href="/category/china/shaghai/">Shaghai</a></li></ul></li>
-<li><a href="/category/japan/">Japan</a><ul class="category-nav-children"><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
-<li><a href="/category/south-korea/">South Korea</a><ul class="category-nav-children"><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
+<li><div class="category-nav-item"><a href="/category/japan/">Japan</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-5" aria-label="Expand Japan categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-5" hidden><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
+<li><div class="category-nav-item"><a href="/category/south-korea/">South Korea</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-7" aria-label="Expand South Korea categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-7" hidden><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
 <li><a href="/category/south-korea/gangwon/">Gangwon</a></li>
 <li><a href="/category/south-korea/seoul/">Seoul</a></li></ul></li></ul>
           </nav>

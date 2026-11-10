@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>China/Beijing Travel Guides | Plain Compass</title>
-  <meta name="description" content="Firsthand travel guides and trip reports from China/Beijing, with route details and practical observations.">
+  <title>Beijing Travel Guides | Plain Compass</title>
+  <meta name="description" content="Firsthand travel guides and trip reports from Beijing, with route details and practical observations.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://plaincompass.github.io/category/china/beijing/">
   <meta property="og:site_name" content="Plain Compass">
-  <meta property="og:title" content="China/Beijing Travel Guides | Plain Compass">
-  <meta property="og:description" content="Firsthand travel guides and trip reports from China/Beijing, with route details and practical observations.">
+  <meta property="og:title" content="Beijing Travel Guides | Plain Compass">
+  <meta property="og:description" content="Firsthand travel guides and trip reports from Beijing, with route details and practical observations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://plaincompass.github.io/category/china/beijing/">
   <meta name="twitter:card" content="summary">
@@ -65,6 +65,44 @@
         });
       });
       document.addEventListener("DOMContentLoaded", () => {
+        const categoryNav = document.querySelector(".category-nav");
+        const expandAllButton = document.querySelector(".category-nav-expand-all");
+        if (!categoryNav || !expandAllButton) return;
+
+        const categoryToggles = [...categoryNav.querySelectorAll(".category-nav-toggle")];
+        const setExpanded = (toggle, expanded) => {
+          const children = document.getElementById(toggle.getAttribute("aria-controls"));
+          if (!children) return;
+          toggle.setAttribute("aria-expanded", String(expanded));
+          toggle.setAttribute(
+            "aria-label",
+            `${expanded ? "Collapse" : "Expand"} ${toggle.parentElement.querySelector("a, span").textContent.trim()} categories`,
+          );
+          toggle.querySelector("span").textContent = expanded ? "-" : "+";
+          children.hidden = !expanded;
+        };
+        const updateExpandAllButton = () => {
+          const allExpanded = categoryToggles.every(
+            (toggle) => toggle.getAttribute("aria-expanded") === "true",
+          );
+          expandAllButton.textContent = allExpanded ? "Collapse all" : "Expand all";
+          expandAllButton.setAttribute("aria-expanded", String(allExpanded));
+        };
+
+        categoryNav.addEventListener("click", (event) => {
+          const toggle = event.target.closest(".category-nav-toggle");
+          if (!toggle) return;
+          setExpanded(toggle, toggle.getAttribute("aria-expanded") !== "true");
+          updateExpandAllButton();
+        });
+        expandAllButton.addEventListener("click", () => {
+          const expand = expandAllButton.getAttribute("aria-expanded") !== "true";
+          categoryToggles.forEach((toggle) => setExpanded(toggle, expand));
+          updateExpandAllButton();
+        });
+        updateExpandAllButton();
+      });
+      document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll(".article video[data-autoplay-on-view]");
         if (!videos.length || !("IntersectionObserver" in window)) return;
 
@@ -114,12 +152,12 @@
     </header>
       <div class="site-layout">
         <main class="site-main"><p class="eyebrow">Travel notes</p>
-<h1>China/Beijing</h1>
-<p class="page-description">Firsthand travel guides and trip reports from China/Beijing, with route details and practical observations.</p>
+<h1>Beijing</h1>
+<p class="page-description">Firsthand travel guides and trip reports from Beijing, with route details and practical observations.</p>
 <section class="post-list" aria-label="Travel guides and trip reports"><article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/beijinghub/">Beijing Travel Hub: Forbidden City, Summer Palace, Temple of Heaven, and Huanghua Qingcheng</a></h2>
     <p>The trip covered Beijing’s major imperial landmarks, with a separate day tour to Huanghua Qingcheng for boat rides and Great Wall scenery.</p>
   </div>
@@ -127,7 +165,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Summer Palace, Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/summerpalace/">Summer Palace in Beijing: Views from the Tower of Buddhist Incense</a></h2>
     <p>I spent two hours exploring the Summer Palace in Beijing, enjoying panoramic views from the Tower of Buddhist Incense and the park&#39;s peaceful atmosphere.</p>
   </div>
@@ -135,7 +173,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/templeofheaven/">Crowded but Stunning: My Quick Visit to Beijing&#39;s Temple of Heaven</a></h2>
     <p>The Hall of Prayer for Good Harvests was grander than expected, but dense crowds and influencer photo shoots made the park feel busier than the Forbidden City.</p>
   </div>
@@ -143,7 +181,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Huanghua Qingcheng, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/huanghuaqingcheng/">Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng</a></h2>
     <p>Rode a boat to a submerged section of the Great Wall, took a lift train up the mountain, and enjoyed quiet riverside views and a peaceful walk.</p>
   </div>
@@ -151,7 +189,7 @@
 <article class="post-card">
   
   <div class="post-card-copy">
-    <p class="post-location">Beijing, China</p>
+    <p class="post-location"><a href="/category/china/beijing/">Beijing</a> / <a href="/category/china/">China</a></p>
     <h2><a href="/posts/china/beijing/forbiddencity/">Forbidden City in June: Crowded Heat, North Gate Garden, and Water Reflections</a></h2>
     <p>I braved a 30-minute wait and sweltering crowds at the Forbidden City, finding a quiet garden near the north gate and peaceful waterfront reflections.</p>
   </div>
@@ -189,12 +227,12 @@
           </section>
           <nav class="aside-section" aria-label="Post categories">
             <h2>Categories</h2>
-            <ul class="category-nav"><li><a href="/category/china/">China</a><ul class="category-nav-children"><li><a href="/category/china/beijing/">Beijing</a></li>
+            <button class="category-nav-expand-all" type="button" aria-expanded="false">Expand all</button><ul class="category-nav"><li><div class="category-nav-item"><a href="/category/china/">China</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-0" aria-label="Expand China categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-0" hidden><li><a href="/category/china/beijing/">Beijing</a></li>
 <li><a href="/category/china/datong/">Datong</a></li>
 <li><a href="/category/china/qinghai/">Qinghai</a></li>
 <li><a href="/category/china/shaghai/">Shaghai</a></li></ul></li>
-<li><a href="/category/japan/">Japan</a><ul class="category-nav-children"><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
-<li><a href="/category/south-korea/">South Korea</a><ul class="category-nav-children"><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
+<li><div class="category-nav-item"><a href="/category/japan/">Japan</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-5" aria-label="Expand Japan categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-5" hidden><li><a href="/category/japan/obihiro/">Obihiro</a></li></ul></li>
+<li><div class="category-nav-item"><a href="/category/south-korea/">South Korea</a><button class="category-nav-toggle" type="button" aria-expanded="false" aria-controls="category-nav-children-7" aria-label="Expand South Korea categories"><span aria-hidden="true">+</span></button></div><ul class="category-nav-children" id="category-nav-children-7" hidden><li><a href="/category/south-korea/chungnam/">Chungnam</a></li>
 <li><a href="/category/south-korea/gangwon/">Gangwon</a></li>
 <li><a href="/category/south-korea/seoul/">Seoul</a></li></ul></li></ul>
           </nav>
