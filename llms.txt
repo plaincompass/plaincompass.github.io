@@ -24,41 +24,29 @@ with additional destinations planned.
 
 ## Recommended Articles
 
-- [Shanghai Disneyland: Zootopia Village & Cloud Time Hotel Stay](https://plaincompass.github.io/posts/china/shanghai-disneyland/)
-- [Zhujiajiao: A Quiet Water Village Escape Near Shanghai](https://plaincompass.github.io/posts/china/zhujiajiao/)
-- [Wukang Mansion: Early Morning Photos & Home Inn Stay](https://plaincompass.github.io/posts/china/wukang-mansion/)
+- [Shanghai Disneyland: Zootopia Village & Cloud Time Hotel Stay](https://plaincompass.github.io/posts/china/shaghai/shanghai-disneyland/)
+- [Zhujiajiao: A Quiet Water Village Escape Near Shanghai](https://plaincompass.github.io/posts/china/shaghai/zhujiajiao/)
+- [Wukang Mansion: Early Morning Photos & Home Inn Stay](https://plaincompass.github.io/posts/china/shaghai/wukang-mansion/)
 - [Beijing Travel Hub: Forbidden City, Summer Palace, Temple of Heaven, and Huanghua Qingcheng](https://plaincompass.github.io/posts/china/beijing/beijinghub/)
 - [Summer Palace in Beijing: Views from the Tower of Buddhist Incense](https://plaincompass.github.io/posts/china/beijing/summerpalace/)
 - [Crowded but Stunning: My Quick Visit to Beijing's Temple of Heaven](https://plaincompass.github.io/posts/china/beijing/templeofheaven/)
 - [Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng](https://plaincompass.github.io/posts/china/beijing/huanghuaqingcheng/)
 - [Forbidden City in June: Crowded Heat, North Gate Garden, and Water Reflections](https://plaincompass.github.io/posts/china/beijing/forbiddencity/)
-- [Xining: Bus to Ta'ershan and Train to Chaka Salt Lake](https://plaincompass.github.io/posts/china/xininghub/)
-- [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/xining/)
-- [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/taerusu/)
+- [Xining: Bus to Ta'ershan and Train to Chaka Salt Lake](https://plaincompass.github.io/posts/china/qinghai/xininghub/)
+- [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/qinghai/xining/)
+- [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/qinghai/taerusu/)
 - [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihirohub/)
 - [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/tokachionsenobihiro/)
 - [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/nukabiralake/)
 - [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/)
-- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/chaka-salt-lake/)
-- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/)
-- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/)
+- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/qinghai/chaka-salt-lake/)
+- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datong/datongvolcano/)
+- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/datong/)
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/)
 - [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/jeongseon-mindoong/)
 - [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/geumsan-wellness-walk/)
 
 ## Published Articles
-
-### China
-
-- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
-- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/chaka-salt-lake/): My experience visiting Chaka Salt Lake from Xining, including the five-hour daytime sleeper train, photography spots, crowds, altitude preparation, and why staying overnight is worth it.
-- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
-- [Shanghai Disneyland: Zootopia Village & Cloud Time Hotel Stay](https://plaincompass.github.io/posts/china/shanghai-disneyland/): Visited Zootopia Village at Shanghai Disneyland, checked attraction wait times with the Shanghai Disney app, and stayed at Cloud Time Hotel. The moderate crowds and nighttime lighting made the visit memorable.
-- [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/taerusu/): It takes 20 minutes to climb the hill to reach Ta'ershan at 2,600m altitude. It is characterized by monks' chants and 7 stone stupas at the entrance.
-- [Wukang Mansion: Early Morning Photos & Home Inn Stay](https://plaincompass.github.io/posts/china/wukang-mansion/): Stayed at Home Inn for a 30-second walk to Wukang Mansion. Captured quiet early morning photos before crowds arrived and enjoyed nearby bakeries.
-- [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/xining/): 3N/4D trip to Xining for Qinghai Lake. Dry, cool late-August weather with stunning rocky mountain views. Taxi transfer cost 120 yuan. Use Alipay/WeChat Pay.
-- [Xining: Bus to Ta'ershan and Train to Chaka Salt Lake](https://plaincompass.github.io/posts/china/xininghub/): Took Bus 909 to Ta'ershan for a 20-minute uphill walk and a 5-hour sleeper train to Chaka Salt Lake from Xining.
-- [Zhujiajiao: A Quiet Water Village Escape Near Shanghai](https://plaincompass.github.io/posts/china/zhujiajiao/): Sitting on a swing bench under a purple acacia tree, I found Zhujiajiao peaceful and uncrowded. Easy subway access and flat paths made this historic water village a perfect quiet break from Shanghai.
 
 ### China/Beijing
 
@@ -67,6 +55,24 @@ with additional destinations planned.
 - [Forbidden City in June: Crowded Heat, North Gate Garden, and Water Reflections](https://plaincompass.github.io/posts/china/beijing/forbiddencity/): I braved a 30-minute wait and sweltering crowds at the Forbidden City, finding a quiet garden near the north gate and peaceful waterfront reflections.
 - [Submerged Great Wall and Riverside Serenity at Huanghua Qingcheng](https://plaincompass.github.io/posts/china/beijing/huanghuaqingcheng/): Rode a boat to a submerged section of the Great Wall, took a lift train up the mountain, and enjoyed quiet riverside views and a peaceful walk.
 - [Summer Palace in Beijing: Views from the Tower of Buddhist Incense](https://plaincompass.github.io/posts/china/beijing/summerpalace/): I spent two hours exploring the Summer Palace in Beijing, enjoying panoramic views from the Tower of Buddhist Incense and the park's peaceful atmosphere.
+
+### China/Datong
+
+- [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/datong/): My experience traveling from Datong Airport to the Datong Volcano area, including public transport challenges, taxi costs, a foreigner-friendly hotel, and practical tips for independent travelers.
+- [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datong/datongvolcano/): A personal walking guide to the Datong Volcano area, including the volcano viewpoint near the volcano district, trail conditions, volcano views, and practical travel tips.
+
+### China/Qinghai
+
+- [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/qinghai/chaka-salt-lake/): My experience visiting Chaka Salt Lake from Xining, including the five-hour daytime sleeper train, photography spots, crowds, altitude preparation, and why staying overnight is worth it.
+- [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/qinghai/taerusu/): It takes 20 minutes to climb the hill to reach Ta'ershan at 2,600m altitude. It is characterized by monks' chants and 7 stone stupas at the entrance.
+- [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/qinghai/xining/): 3N/4D trip to Xining for Qinghai Lake. Dry, cool late-August weather with stunning rocky mountain views. Taxi transfer cost 120 yuan. Use Alipay/WeChat Pay.
+- [Xining: Bus to Ta'ershan and Train to Chaka Salt Lake](https://plaincompass.github.io/posts/china/qinghai/xininghub/): Took Bus 909 to Ta'ershan for a 20-minute uphill walk and a 5-hour sleeper train to Chaka Salt Lake from Xining.
+
+### China/Shaghai
+
+- [Shanghai Disneyland: Zootopia Village & Cloud Time Hotel Stay](https://plaincompass.github.io/posts/china/shaghai/shanghai-disneyland/): Visited Zootopia Village at Shanghai Disneyland, checked attraction wait times with the Shanghai Disney app, and stayed at Cloud Time Hotel. The moderate crowds and nighttime lighting made the visit memorable.
+- [Wukang Mansion: Early Morning Photos & Home Inn Stay](https://plaincompass.github.io/posts/china/shaghai/wukang-mansion/): Stayed at Home Inn for a 30-second walk to Wukang Mansion. Captured quiet early morning photos before crowds arrived and enjoyed nearby bakeries.
+- [Zhujiajiao: A Quiet Water Village Escape Near Shanghai](https://plaincompass.github.io/posts/china/shaghai/zhujiajiao/): Sitting on a swing bench under a purple acacia tree, I found Zhujiajiao peaceful and uncrowded. Easy subway access and flat paths made this historic water village a perfect quiet break from Shanghai.
 
 ### Japan
 
