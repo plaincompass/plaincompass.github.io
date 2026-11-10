@@ -35,16 +35,16 @@ with additional destinations planned.
 - [Xining: Bus to Ta'ershan and Train to Chaka Salt Lake](https://plaincompass.github.io/posts/china/qinghai/xininghub/)
 - [Xining, China: Rocky Mountains and Dry Late-August Weather](https://plaincompass.github.io/posts/china/qinghai/xining/)
 - [Ta'ershan Monastery: Monks' Chants and a 2,600m Altitude Walk](https://plaincompass.github.io/posts/china/qinghai/taerusu/)
-- [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihirohub/)
-- [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/tokachionsenobihiro/)
-- [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/nukabiralake/)
-- [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/)
+- [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihiro/obihirohub/)
+- [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/tokachionsenobihiro/)
+- [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/nukabiralake/)
+- [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/)
 - [Is Chaka Salt Lake Worth Visiting? My Experience Taking the Daytime Sleeper Train from Xining](https://plaincompass.github.io/posts/china/qinghai/chaka-salt-lake/)
 - [Is the Datong Volcano Viewpoint Worth Visiting Without a Tour?](https://plaincompass.github.io/posts/china/datong/datongvolcano/)
 - [Can You Reach the Datong Volcano Area From Datong Airport Without a Taxi?](https://plaincompass.github.io/posts/china/datong/datong/)
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/)
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/jeongseon-mindoong/)
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/geumsan-wellness-walk/)
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/seoul/gwanak/)
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/gangwon/jeongseon-mindoong/)
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/chungnam/geumsan-wellness-walk/)
 
 ## Published Articles
 
@@ -93,13 +93,32 @@ with additional destinations planned.
 
 ### Japan
 
-- [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/nukabiralake/): A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.
-- [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihirohub/): Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.
-- [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
-- [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/tokachionsenobihiro/): A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.
+- [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/nukabiralake/): A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.
+- [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihiro/obihirohub/): Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.
+- [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
+- [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/tokachionsenobihiro/): A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.
+
+### Japan/Obihiro
+
+- [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/nukabiralake/): A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.
+- [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihiro/obihirohub/): Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.
+- [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
+- [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/tokachionsenobihiro/): A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.
 
 ### South Korea
 
-- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
-- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
-- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/seoul/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/gangwon/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/chungnam/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
+
+### South Korea/Chungnam
+
+- [Is the Geumsan Wellness Walking Challenge a Difficult Hike?](https://plaincompass.github.io/posts/south-korea/chungnam/geumsan-wellness-walk/): A personal review of the Geumsan Wellness Walking Challenge, including its uphill section, event experience, reservation notes, accessibility considerations, and a visit to the Seven Hundred Patriotic Martyrs Tomb.
+
+### South Korea/Gangwon
+
+- [Is Mt. Mindungsan Worth Hiking in Jeongseon?](https://plaincompass.github.io/posts/south-korea/gangwon/jeongseon-mindoong/): A personal hiking review of Mt. Mindungsan in Jeongseon, including the route from the second parking lot, the steep and slippery descent toward Jeungsan Elementary School, travel tips, reservation notes, and seasonal advice.
+
+### South Korea/Seoul
+
+- [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/seoul/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
