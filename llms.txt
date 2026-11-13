@@ -24,6 +24,7 @@ with additional destinations planned.
 
 ## Recommended Articles
 
+- [Tokyo: Akihabara Gaming, Lake Kawaguchiko E-Bike, and Shiba Park Picnic](https://plaincompass.github.io/posts/japan/tokyo/tokyohub/)
 - [Picnic at Shiba Park: Kaisendon and Tokyo Tower Views](https://plaincompass.github.io/posts/japan/tokyo/tokyo-tower/)
 - [Akihabara Hunt: PlayStation Portal, Crepes & Crowded Streets](https://plaincompass.github.io/posts/japan/tokyo/akihabara/)
 - [Cycling Lake Kawaguchiko: Electric Bike Picnic & Mt. Fuji Views](https://plaincompass.github.io/posts/japan/tokyo/lake-kawaguchiko/)
@@ -124,6 +125,7 @@ with additional destinations planned.
 - [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
 - [Picnic at Shiba Park: Kaisendon and Tokyo Tower Views](https://plaincompass.github.io/posts/japan/tokyo/tokyo-tower/): A relaxed 3-hour picnic in Shiba Park's shaded lower grounds. Enjoyed Kaisendon while watching Tokyo Tower rise above full-bloom cherry blossoms.
 - [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/tokachionsenobihiro/): A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.
+- [Tokyo: Akihabara Gaming, Lake Kawaguchiko E-Bike, and Shiba Park Picnic](https://plaincompass.github.io/posts/japan/tokyo/tokyohub/): Subway to Akihabara for gaming, highway bus to Lake Kawaguchiko for e-bike cycling, and a walk to Shiba Park for a picnic under cherry blossoms.
 
 ### Japan/Obihiro
 
@@ -137,6 +139,7 @@ with additional destinations planned.
 - [Akihabara Hunt: PlayStation Portal, Crepes & Crowded Streets](https://plaincompass.github.io/posts/japan/tokyo/akihabara/): Spent 2 hours in crowded Akihabara searching for a PlayStation Portal. No luck, but enjoyed crepes and takoyaki near Bic Camera.
 - [Cycling Lake Kawaguchiko: Electric Bike Picnic & Mt. Fuji Views](https://plaincompass.github.io/posts/japan/tokyo/lake-kawaguchiko/): Rented an electric bike to cycle steep paths around Lake Kawaguchiko. Skipped crowded Lawson spots for a quiet picnic with clear Mt. Fuji views.
 - [Picnic at Shiba Park: Kaisendon and Tokyo Tower Views](https://plaincompass.github.io/posts/japan/tokyo/tokyo-tower/): A relaxed 3-hour picnic in Shiba Park's shaded lower grounds. Enjoyed Kaisendon while watching Tokyo Tower rise above full-bloom cherry blossoms.
+- [Tokyo: Akihabara Gaming, Lake Kawaguchiko E-Bike, and Shiba Park Picnic](https://plaincompass.github.io/posts/japan/tokyo/tokyohub/): Subway to Akihabara for gaming, highway bus to Lake Kawaguchiko for e-bike cycling, and a walk to Shiba Park for a picnic under cherry blossoms.
 
 ### South Korea
 
