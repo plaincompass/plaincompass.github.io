@@ -24,6 +24,7 @@ with additional destinations planned.
 
 ## Recommended Articles
 
+- [Cycling Lake Kawaguchiko: Electric Bike Picnic & Mt. Fuji Views](https://plaincompass.github.io/posts/japan/tokyo/lake-kawaguchiko/)
 - [Qingdao: Badaguan Villas, Signal Mountain Views & Zhanqiao Pier](https://plaincompass.github.io/posts/china/qingdao/qingdaohub/)
 - [Misty Morning Hike: Signal Mountain Park's German Village Views](https://plaincompass.github.io/posts/china/qingdao/signal-mountain-park/)
 - [Badaguan, Qingdao: Rainy Morning Stroll Through European Villas](https://plaincompass.github.io/posts/china/qingdao/badaguan/)
@@ -114,6 +115,7 @@ with additional destinations planned.
 
 ### Japan
 
+- [Cycling Lake Kawaguchiko: Electric Bike Picnic & Mt. Fuji Views](https://plaincompass.github.io/posts/japan/tokyo/lake-kawaguchiko/): Rented an electric bike to cycle steep paths around Lake Kawaguchiko. Skipped crowded Lawson spots for a quiet picnic with clear Mt. Fuji views.
 - [Nukabira Lake Winter Walk: Quiet Snowy Landscape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/nukabiralake/): A peaceful stroll around Nukabira Lake in February 2026, capturing clear skies, Mount Asahi in view, and a surprise wild deer encounter. The ice was melting and the snow thinner than expected, but the easy path and accessible bus ride from Obihiro made it a gentle, Nordic‑style winter forest experience.
 - [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihiro/obihirohub/): Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.
 - [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
@@ -125,6 +127,10 @@ with additional destinations planned.
 - [Obihiro Travel Hub](https://plaincompass.github.io/posts/japan/obihiro/obihirohub/): Explore Obihiro, Hokkaido, Japan, featuring Nukabira Lake, Tokachigawasuikei, and Butadon.
 - [Obihiro: Exploring the Snowy Landscapes, Red Squirrel Encounter, and Delicious Butadon](https://plaincompass.github.io/posts/japan/obihiro/obihiro/): Experience Obihiro, Hokkaido, Japan, featuring snowy landscapes, red squirrel encounters, and the best butadon (grilled pork) in Japan.
 - [Tokachikawa Onsen (Obihiro): A Peaceful Hot Spring Escape in Hokkaido](https://plaincompass.github.io/posts/japan/obihiro/tokachionsenobihiro/): A one-night, two-day trip to Tokachikawa Onsen in Hokkaido, featuring a unique hot spring emerging from moss, peaceful open-air baths, and quiet small-town atmosphere. Includes tips on transportation, logistics, and what to bring.
+
+### Japan/Tokyo
+
+- [Cycling Lake Kawaguchiko: Electric Bike Picnic & Mt. Fuji Views](https://plaincompass.github.io/posts/japan/tokyo/lake-kawaguchiko/): Rented an electric bike to cycle steep paths around Lake Kawaguchiko. Skipped crowded Lawson spots for a quiet picnic with clear Mt. Fuji views.
 
 ### South Korea
 
