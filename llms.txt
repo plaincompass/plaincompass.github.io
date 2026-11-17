@@ -24,6 +24,7 @@ with additional destinations planned.
 
 ## Recommended Articles
 
+- [Shalun Beach Sunset: Humid June Escape from Taipei](https://plaincompass.github.io/posts/taiwan/taibei/shalun-beach/)
 - [Tokyo: Akihabara Gaming, Lake Kawaguchiko E-Bike, and Shiba Park Picnic](https://plaincompass.github.io/posts/japan/tokyo/tokyohub/)
 - [Picnic at Shiba Park: Kaisendon and Tokyo Tower Views](https://plaincompass.github.io/posts/japan/tokyo/tokyo-tower/)
 - [Akihabara Hunt: PlayStation Portal, Crepes & Crowded Streets](https://plaincompass.github.io/posts/japan/tokyo/akihabara/)
@@ -158,3 +159,11 @@ with additional destinations planned.
 ### South Korea/Seoul
 
 - [Is Mt. Gwanak a Good Mountain to Hike During a Seoul Trip?](https://plaincompass.github.io/posts/south-korea/seoul/gwanak/): A personal hiking guide to Mt. Gwanak from Gwacheon Station, including the route to Yeonjuam Temple, trail tips, and a quiet prayer spot near the summit.
+
+### Taiwan
+
+- [Shalun Beach Sunset: Humid June Escape from Taipei](https://plaincompass.github.io/posts/taiwan/taibei/shalun-beach/): Subway trip to Shalun Beach for a yellow sunset. Wet ground reflected light, making photos stunning despite the humid June heat.
+
+### Taiwan/Taibei
+
+- [Shalun Beach Sunset: Humid June Escape from Taipei](https://plaincompass.github.io/posts/taiwan/taibei/shalun-beach/): Subway trip to Shalun Beach for a yellow sunset. Wet ground reflected light, making photos stunning despite the humid June heat.
